@@ -1,4 +1,4 @@
-#06-FrontendMentor-Challenges
+#06-FrontendMentor-Challenges#
 
 Repositório destinado à armazenar alguns projetos desenvolvidos em desafios encontrados na página 
 Front-End Mentor.

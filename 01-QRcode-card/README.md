@@ -12,7 +12,7 @@
 ```md
 [Original QR-Code Card design] https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H
 ```
-<img width="600px" src="https://user-images.githubusercontent.com/105606295/193434192-b54cde5a-cd73-4970-b97c-40a98ff8b20a.png">
+<img width="800px" src="https://user-images.githubusercontent.com/105606295/193434192-b54cde5a-cd73-4970-b97c-40a98ff8b20a.png">
 
 <h2> 💻 Stacks utilizadas</h2>
 <ul>

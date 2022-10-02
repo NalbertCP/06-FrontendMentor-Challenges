@@ -5,7 +5,7 @@
 </div>
 <h2>📋 Descrição</h2>
 <p>
-    Um simples card QR Code criado apenas com HTML e CSS, criado a partir do design fornecido pelo site Front-End Mentor.
+    Um simples card QR Code criado apenas com HTML e CSS, a partir do design fornecido pelo site Front-End Mentor.
     <br>Segue o link abaixo com o design do projeto.
 </p>
 

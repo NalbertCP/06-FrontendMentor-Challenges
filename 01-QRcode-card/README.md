@@ -18,6 +18,5 @@
   <li>HTML</li>
   <li>CSS</li>
 </ul>
-<br>
 <h2> 💵 Licença</h2>
 <p><b>O uso de todos os arquivos deste projeto é limitado apenas a fins de estudos.<b></p>

@@ -167,13 +167,14 @@ footer > .coded-by{
     font-size: 0.75rem;
 }
 
-.coded-by > p{
+.coded-by > p, .coded-by > a{
     color:var(--white);
     font-weight: 300;
     line-height: 1.5;
+    text-decoration: none;
 }
 
-.coded-by > p:first-child, .coded-by span{
+.coded-by > a, .coded-by span{
     color: #00FFF8;
 }
 /*Fim - Footer*/

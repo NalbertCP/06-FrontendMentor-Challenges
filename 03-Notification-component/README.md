@@ -8,14 +8,14 @@
 <h2>📋 Descrição</h2>
 <p>
     Uma página de notificações criada com HTML, CSS e Java Script. Projeto feito a partir do design fornecido
-    em um dos desafios encontrados na página Front-End Mentor. O componente possui as seguintes funcionalidades:
+    em um dos desafios da página Front-End Mentor. O componente possui as seguintes funcionalidades:
 </p>
 <ul>
   <li>Diferenciação entre notificações lidas e não lidas;</li>
   <li>Botao para marcar todas as notificações como lidas;</li>
   <li>Contador de notifcações não lidas.</li>
 </ul>
-<p><b>O design do projeto original fornecido pela Front-End Metor segue abaixo:</b></p>
+<p><b>O design do projeto original fornecido pela Front-End Metor segue no link abaixo:</b></p>
 
 ```md
 [Notification component challenge] https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC

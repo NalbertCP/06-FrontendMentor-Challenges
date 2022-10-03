@@ -15,12 +15,10 @@ for (let notefication of notifications){
 function notificationEvent(event){
     let notification = this
     let targetClass = event.target.className
-
     if (! elementsClass.every((value)=> value!=targetClass)){
         if (notification.classList[2]==="read") return event.stopPropagation()
         else return changeNotificationCount(notification)
     }
-
     changeNotificationCount(notification)
 }
 function changeNotificationCount(notification){

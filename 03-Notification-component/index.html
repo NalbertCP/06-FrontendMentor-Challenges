@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <title>Frontend Mentor | Notifications page</title>
+    </head>
+    <body>
+        <main class="flex">
+            <div class="notifications-container">
+                <section class="flex header">
+                    <div class="flex title">
+                        <h2>Notifications</h2>
+                        <div class="notifications-count">7</div>
+                    </div>
+                    <button class="mark-as-read">Mark all as read</button>
+                </section>
+                <section class="notifications">
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-mark-webber.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Mark Webber</span>
+                                <span class="subject">reacted to your recent post</span>
+                                <span class="additional-content">My first tournament today!</span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">1m ago</span>
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-angela-gray.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Angela Gray</span>
+                                <span class="subject">followed you</span>
+                                <span class="additional-content"></span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">5m ago</span>
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-jacob-thompson.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Jacob Thompson</span>
+                                <span class="subject">has joined your group</span>
+                                <span class="additional-content">Chess Club</span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Rizky Hasanuddin</span>
+                                <span class="subject">sent you a private message</span>
+                                <span class="additional-content"></span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">5 days ago</span>
+                            <div class="private-message">
+                                <p>Hello, thanks for setting up to Chess Club. I've been a member for a few
+                                    weeks now and i'm already having lots of fun and improving my game.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-kimberly-smith.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Kimberly Smith</span>
+                                <span class="subject">commented on your picture</span>
+                                <span class="additional-content"></span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">1 weeks ago</span>
+                        </div>
+                        <div class="notification-image">
+                            <img class="note-img" src="./assets/images/image-chess.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-nathan-peterson.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Natan Peterson</span>
+                                <span class="subject">reacted to your recent post</span>
+                                <span class="additional-content">5 end-game strategies to increase your win rate</span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">2 weeks ago</span>
+                        </div>
+                    </div>
+                    <div class="flex notification">
+                        <div class="avatar">
+                            <img src="./assets/images/avatar-anna-kim.webp" alt="profile-picture">
+                        </div>
+                        <div class="notification-message">
+                            <div class="content">
+                                <span class="profile-name">Anna Kim</span>
+                                <span class="subject">left the group</span>
+                                <span class="additional-content">Chess Club</span>
+                                <span class="unread-marker"></span>
+                            </div>
+                            <span class="created-at-time">2 weeks ago</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="atribuitions">
+                    <a target="_blank" href="https://www.frontendmentor.io/">Frontend Mentor</a>
+                    <span>Coded by <b>Nalbert Cerqueira</b></span>
+                </section>
+            </div>
+        </main>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

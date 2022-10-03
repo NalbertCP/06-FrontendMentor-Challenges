@@ -236,6 +236,7 @@ section.notifications{
         margin-top: 0;
         min-height:100vh;
         padding: 1.2rem 0.75rem;
+        border-radius: 0rem;
     }
 
     section.header{

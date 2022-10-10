@@ -29,6 +29,7 @@
 main.flex{
     width: 100%;
     min-height: 100vh;
+    min-width: 340px;
     padding: 0 2rem;
     align-items: flex-start;
     background-color: var(--very-light-grayish-blue);
@@ -225,6 +226,10 @@ section.notifications{
 @media only screen and (max-width:480px){
     html{
         font-size: 127%;
+    }
+
+    body{
+        min-width: fit-content;
     }
 
     main.flex{

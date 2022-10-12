@@ -120,6 +120,7 @@ main > .card{
 .price > img{
     max-width: 0.8rem;
     height: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .time-left{
@@ -129,6 +130,7 @@ main > .card{
 .time-left > img{
     max-width: 0.8rem;
     height: 0.8rem;
+    font-size: 0.6rem;    
 }
 
 .card .created-by{
@@ -140,6 +142,7 @@ main > .card{
 .created-by > img{
     width: 1.5rem;
     height: 1.5rem;
+    font-size: 0.6rem;
     border-radius: 50%;
     border: 1px solid var(--white);
 }

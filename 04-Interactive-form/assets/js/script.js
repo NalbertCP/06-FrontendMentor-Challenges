@@ -27,7 +27,7 @@ formSent.addEventListener("submit",(event)=>{
 
 /*Função: manipulando enventos do formulário*/
 function formHandler(){
-    let flag = ""
+    let flag = false
     return {
         main(event){
             flag = true

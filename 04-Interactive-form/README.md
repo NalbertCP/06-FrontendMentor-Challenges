@@ -12,7 +12,7 @@
     O projeto inclui a validação de todos os campos do formulário antes do envio do mesmo, como também, alteração no aspecto visual do cartão de crédito durante o preenchimento de dados.
 </p>
 
-<p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target"_blank">Front-end Metor</a> segue no link abaixo:</b></p>
+<p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
 [Interative card form | challenge] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw

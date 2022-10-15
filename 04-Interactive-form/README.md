@@ -6,7 +6,7 @@
 </div>
 <h2>📋 Descrição</h2>
 <p>
-    Projeto criado a partir de um dos desafios disponíveis na página Front-end Mentor, com objetivo de simular uma página de formulário para preenchimento de dados durante criação de um cartão de crédito.
+    Projeto criado a partir de um dos desafios disponíveis na página Front-end Mentor, com objetivo de simular uma página de formulário para preenchimento de dados durante a criação de um cartão de crédito.
 </p>
 <p>
     O projeto inclui: validação de todos os campos do formulário antes do envio do mesmo, como também, alteração no aspecto visual do cartão durante o preenchimento dos dados.

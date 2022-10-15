@@ -39,7 +39,7 @@ main.flex{
     flex: 1;
     max-width: 484px;
     background-color: var(--white);
-    margin-top: 42px;
+    margin-top: 1.25rem;
     padding: 1.3rem 1.3rem;
     border-radius: 0.75rem;
     box-shadow: 2px 4px 16px #ebebeb;

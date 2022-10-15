@@ -113,7 +113,7 @@ main > .cards-section{
 }
 /* Fim - Estilizando cartões*/
 
-/* Início - Estilizando formulário*/
+/* Início - Estilizando formulário de envio*/
 .form-section{
     height: 100%;
 }
@@ -216,9 +216,9 @@ input[type=submit]:hover{
 input[type=submit]:active{
     background-color: var(--very-dark-violet)
 }
-/*Fim - Estilizando formulário*/
+/*Fim - Estilizando formulário de envio*/
 
-/*Início - Página "form enviado"*/
+/*Início - Estilizando formulário após envio dos dados*/
 .form-sent{
     display: none;
 }
@@ -248,9 +248,9 @@ input[type=submit]:active{
     font-size: 0.9rem;
     font-weight: 500;
 }
-/*Fim - Página "form enviado"*/
+/*Fim - Estilizando formulário após envio dos dados*/
 
-/*Media Queries*/
+/*Media queries*/
 @media (max-width: 800px){
     html{font-size: 140%;}
 

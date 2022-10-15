@@ -17,7 +17,7 @@
 ```md
 [Original QR-Code Card design] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
 ```
-<img width="800px" src="https://user-images.githubusercontent.com/105606295/193434192-b54cde5a-cd73-4970-b97c-40a98ff8b20a.png">
+<img width="800px" src="https://user-images.githubusercontent.com/105606295/196008008-46762780-a6c8-42fe-9434-ef8c41906387.png">
 
 <h2> 💻 Stacks utilizadas</h2>
 <ul>

@@ -9,13 +9,13 @@
     Projeto criado a partir de um dos desafios disponíveis na página Front-end Mentor, com objetivo de simular uma página de formulário para preenchimento de dados durante a criação de um cartão de crédito.
 </p>
 <p>
-    O projeto inclui: validação de todos os campos do formulário antes do envio do mesmo, como também, alteração no aspecto visual do cartão durante o preenchimento dos dados.
+    O projeto inclui a validação de todos os campos do formulário antes do envio do mesmo, como também, alteração no aspecto visual do cartão de crédito durante o preenchimento de dados.
 </p>
 
-<p><b>O design do projeto original fornecido pela Front-end Metor segue no link abaixo:</b></p>
+<p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target"_blank">Front-end Metor</a> segue no link abaixo:</b></p>
 
 ```md
-[Original QR-Code Card design] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
+[Interative card form | challenge] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
 ```
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/196008063-cffb363e-47b5-47e9-b551-98abe17f058c.png">
 

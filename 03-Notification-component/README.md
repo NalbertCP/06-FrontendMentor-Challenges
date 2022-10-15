@@ -15,7 +15,7 @@
   <li>Botao para marcar todas as notificações como lidas;</li>
   <li>Contador de notifcações não lidas.</li>
 </ul>
-<p><b>O design do projeto original fornecido pela Front-end Metor segue no link abaixo:</b></p>
+<p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
 [Notification component challenge] https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC

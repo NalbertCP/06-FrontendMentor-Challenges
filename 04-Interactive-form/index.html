@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" href="./assets/img/icon-complete.svg" type="image/x-icon">
+        <title>Frontend Mentor | Interactive card form</title>
+    </head>
+    <body>
+        <main class="w-100 flex">
+            <section class="flex cards-section">
+                <div class="flex front-side">
+                    <div class="card-logo">
+                        <img src="./assets/img/card-logo.svg" alt="credit card company logo">
+                    </div>
+                    <div class="w-100 card-data">
+                        <div class="card-number">
+                            0000 0000 0000 0000
+                        </div>
+                        <div class="flex personal-information">
+                            <div class="owner-name">JANE APPLESEED</div>
+                            <div class="exp-date-card">00/00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back-side">
+                    <div class="card-code">000</div>
+                </div>
+            </section>
+            <section class="w-100 flex form-section">
+                <form class="flex before-send">
+                    <div class="field">
+                        <label for="name">CARDHOLDER NAME</label>
+                        <input 
+                            maxlength=25 
+                            autocomplete="off" 
+                            type="text" 
+                            placeholder="e.g. Jane Applaseed" 
+                            name="owner-name" 
+                            id="owner-name">
+                    </div>
+                    <div class="field">
+                        <label for="card-number">CARD NUMBER</label>
+                        <input 
+                            maxlength=19 
+                            autocomplete="off" 
+                            type="text" 
+                            placeholder="e.g. 1234 5678 9123 0000" 
+                            name="card-number" 
+                            id="card-number">
+                    </div>
+                    <div class="w-100 flex other-fields">
+                        <div class="exp-date-form">
+                            <label for="exp-mounth">EXP. DATE (MM/YY)</label>
+                            <div class="flex inputs">
+                                <input 
+                                    min=1 max=12 
+                                    autocomplete="off" 
+                                    type="number" 
+                                    placeholder="MM" 
+                                    name="exp-mounth" 
+                                    id="exp-mounth">
+                                <input
+                                    min=22
+                                    max = 28
+                                    autocomplete="off" 
+                                    type="number" 
+                                    placeholder="YY" 
+                                    name="exp-year" 
+                                    id="exp-year">
+                            </div>
+                        </div>
+                        <div class="w-100 field card-code-form">
+                            <label for="cvc-code">CVC</label>
+                            <input min=1 autocomplete="off" type="number" placeholder="e.g. 123" name="cvc-code" id="cvc-code">
+                        </div>
+                    </div>
+                    <input type="submit" value="Confirm">
+                </form>
+                <form method="get" action="./index.html" class="flex form-sent">
+                    <div class="w-100 content">
+                        <img src="./assets/img/icon-complete.svg" alt="confirmation icon of form data sent ">
+                        <h3>THANK YOU !</h3>
+                        <p>We've added your card details</p>
+                    </div>
+                    <input type="submit" value="Continue">
+                </form>
+            </section>
+        </main>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+    </body>
+</html>

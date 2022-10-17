@@ -22,7 +22,7 @@ mainForm.addEventListener("submit", (event)=>{
 })
 formSent.addEventListener("submit",(event)=>{
     event.preventDefault()
-    if (formEventHandler.isFlagTrue()) mainForm.submit()
+    formEventHandler.isFlagTrue()? mainForm.submit(): null
 })
 
 /*Função: manipulando enventos do formulário*/

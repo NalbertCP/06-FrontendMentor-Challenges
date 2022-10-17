@@ -22,7 +22,7 @@ mainForm.addEventListener("submit", (event)=>{
 })
 formSent.addEventListener("submit",(event)=>{
     event.preventDefault()
-    if (formEventHandler.isFlagTrue()) formSent.submit()
+    if (formEventHandler.isFlagTrue()) mainForm.submit()
 })
 
 /*Função: manipulando enventos do formulário*/
@@ -31,11 +31,11 @@ function formHandler(){
     return {
         main(event){
             flag = true
+            event.preventDefault()
             this.clearErrors()
             this.validadeOwnerName()
             this.validateCardNumber()
             this.validateEmptyInputs()
-            event.preventDefault()
             if (flag === true){
                 mainForm.classList.add("hide")
                 formSent.classList.add("show")

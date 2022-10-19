@@ -20,7 +20,7 @@ cvcInput.addEventListener("input", cardsEvents.changeCvcCode)
 mainForm.addEventListener("submit", (event)=>{
     formEventHandler.main(event)
 })
-formSent.addEventListener("submit",(event)=>{
+formSent.addEventListener("submit", (event)=>{
     event.preventDefault()
     formEventHandler.isFlagTrue()? mainForm.submit(): null
 })
@@ -54,7 +54,7 @@ function formHandler(){
         },
         createError(message){
             const error = document.createElement("span")
-            error.setAttribute("class","input-error")
+            error.setAttribute("class", "input-error")
             error.innerHTML = message
             return error
         },
@@ -115,16 +115,15 @@ function cardEventsHandler(){
             cardNumber.innerHTML = numberInput.value
         },
         changeExpMouth(){
-            mounthInput.value = mounthInput.value.replace(/\D+/g, "").slice(0,2)
+            mounthInput.value = mounthInput.value.replace(/\D+/g, "").slice(0, 2)
             if (Number(mounthInput.value)>12) mounthInput.value = 12
-            yearInput.value = yearInput.value.replace(/\D+/g, "").slice(0,2)
-
+            yearInput.value = yearInput.value.replace(/\D+/g, "").slice(0, 2)
             const mounth = `0${mounthInput.value}`.slice(-2)
             const year = `0${yearInput.value}`.slice(-2)
             expiringDate.innerHTML = `${mounth}/${year}`
         },
         changeCvcCode(){
-            cvcInput.value = cvcInput.value.slice(0,3).replace(/\D+/g, "")
+            cvcInput.value = cvcInput.value.slice(0, 3).replace(/\D+/g, "")
             cvcCode.innerHTML = `000${cvcInput.value}`.slice(-3)
         }
     }

@@ -17,6 +17,7 @@
 
 html{
     font-size: 113%;
+    transition: font-size 0.25s;
 }
 
 .flex{
@@ -56,6 +57,7 @@ main > .cards-section{
     box-shadow: 0.75em 2em 2em #00000021;
     color: var(--white);
     transition: transform 0.2s, z-index 0.2s;
+    transition: font-size 0.25s;
 }
 
 .front-side:hover, .back-side:hover{
@@ -71,6 +73,7 @@ main > .cards-section{
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
+
 }
 
 .front-side > .card-logo{

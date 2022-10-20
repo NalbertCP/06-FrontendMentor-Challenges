@@ -6,7 +6,7 @@
 
 <h2>📋 Descrição</h2>
 <p>
-    Um belo e minimalista card NFT codado apenas com HTML e CSS, com design fornecido pelo site Front-End Mentor
+    Um belo e minimalista card NFT criado apenas com HTML e CSS, com design fornecido pelo site Front-End Mentor
     em um de seus desafios. Segue abaixo o link do desafio contendo o design original do projeto.
 </p>
 

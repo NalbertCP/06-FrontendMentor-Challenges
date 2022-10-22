@@ -1,0 +1,251 @@
+/*Início - estilos gerais*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    --soft-red: #ec775f;
+    --cyan: #76b5bc;
+    --dark-brown: #382314;
+    --med-brown: hsl(28, 10%, 53%);
+    --cream: #f8e9dd;
+    --pale-orange: #fffaf5;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    display: block;
+}
+
+html{
+    font-size: 112.5%;
+} 
+
+body{
+    background-color: var(--cream);
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*Fim - estilos gerais*/
+
+/*Início - container principal*/
+main{
+    min-width: 416px;
+    padding: 0 0.75rem;
+}
+
+main > section{
+    border-radius: 0.75rem;
+}
+/*Fim - container principal*/
+
+/*Início - estilizando sessão do saldo*/
+section.balance-section{
+    padding: 1.125rem 1.25rem;
+    background-color: var(--soft-red);
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    color: var(--pale-orange)
+}
+
+.balance-section > .component-logo{
+    height:2rem;
+    margin-right: 0.25rem;
+}
+
+.component-logo > img{
+    height: 100%;
+}
+
+.my-balance > span{
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    color: var(--cream);
+}
+
+.my-balance > div{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+/*Fim - estilizando sessão do saldo*/
+
+/*Início - estilizando sessão do gráfico*/
+section.chart-section{
+    background-color: var(--pale-orange);
+    padding: 1.25rem 1.7rem;
+}
+
+.chart-section h2{
+    font-size: 1.3rem;
+    color: var(--dark-brown);
+}
+
+.chart-section #select-week{
+    margin-top: 0.5rem;
+    outline: none;
+    border: 2px solid var(--med-brown);
+    border-radius: 0.25rem;
+    background-color: var(--pale-orange);
+    color: var(--dark-brown);
+    font-weight: 500;
+    transition: background-color 0.25s;
+}
+
+#select-week:focus{
+    background-color: var(--cream);
+}
+
+.chart-section > .chart{
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 8.25rem;
+    padding-bottom: 1.25rem;
+    margin-top: 2.6rem;
+    border-bottom: 1px solid var(--cream);
+    color: var(--med-brown);
+    text-align: center;
+}
+
+.chart .chart-data{
+    margin-bottom: 0.25rem;
+    position: relative;
+    flex-direction: column;
+}
+
+.day > span{
+    font-size: 0.6rem
+}
+
+.chart-data > .chart-bar{
+    height: 0;
+    width: 2rem;
+    border-radius: 0.2rem;
+    background-color: var(--soft-red);
+    cursor: pointer;
+    transition: background-color 0.25s, height 0.5s;
+}
+
+.chart-bar:hover{
+    background-color: #fca492;
+}
+
+.chart-bar.biggest-bar{
+    background-color: var(--cyan);
+}
+
+.biggest-bar:hover{
+    background-color: #a6d8dd;
+}
+
+.chart-bar:hover + .chart-label{
+    opacity: 100%;
+}
+
+.chart-data > .chart-label{
+    background-color: var(--dark-brown);
+    color :var(--pale-orange);
+    font-size: 0.65rem;
+    padding: 0.25rem 0.4rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: -2rem;
+    opacity: 0%;
+    transition: opacity 0.25s;
+}
+
+.total-spent {
+    justify-content: space-between;
+    margin-top: 1.125rem;
+}
+
+.total-week-spent > span{
+    font-size: 0.75rem;
+    color: var(--med-brown);
+}
+
+.total-week-spent > div{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.last-month-variation{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.last-month-variation > span{
+    font-size: 0.75rem;
+    color: var(--med-brown); 
+}
+
+.last-month-variation > div{
+    font-weight: 700;
+    color: var(--dark-brown);
+    font-size: 0.75rem;
+}
+/*Fim - estilizando sessão do gráfico*/
+
+/*Início - footer*/
+footer{
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.attributions a{
+    color: #7a553a;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.attributions a:hover{
+    color: var(--soft-red)
+}
+
+.attributions > span{
+    font-weight: 700;
+    color: var(--med-brown);
+}
+/*Fim - footer*/
+
+/*Media queries*/
+@media only screen and (max-width: 420px) {
+    html{
+        font-size: 120%;
+    }
+
+    body{
+        min-width: fit-content;
+        align-items: flex-start;
+    }
+
+    main{
+        max-width: 100%;
+        min-width: 380px;
+    }
+
+    .chart-section > .chart{
+        font-size: 24px;
+        margin-top: 2.25rem;
+        height: 9.75rem;
+    }
+
+    .chart-data > .chart-bar{
+        width: 1.75rem;
+    }
+
+    .chart-data > .chart-label{
+        top: -1.75rem;
+    }
+
+}

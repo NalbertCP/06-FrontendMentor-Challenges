@@ -1,0 +1,242 @@
+{
+    "1stweek": [
+        {
+            "day": "mon",
+            "amount": 10.45
+        },
+        {
+            "day": "tue",
+            "amount": 34.91
+        },
+        {
+            "day": "wed",
+            "amount": 52.36
+        },
+        {
+            "day": "thu",
+            "amount": 31.07
+        },
+        {
+            "day": "fri",
+            "amount": 23.39
+        },
+        {
+            "day": "sat",
+            "amount": 43.28
+        },
+        {
+            "day": "sun",
+            "amount": 25.48
+        }
+    ],
+    "2ndweek": [
+        {
+            "day": "mon",
+            "amount": 23.18
+        },
+        {
+            "day": "tue",
+            "amount": 22.31
+        },
+        {
+            "day": "wed",
+            "amount": 45.19
+        },
+        {
+            "day": "thu",
+            "amount": 43.44
+        },
+        {
+            "day": "fri",
+            "amount": 50.19
+        },
+        {
+            "day": "sat",
+            "amount": 72.87
+        },
+        {
+            "day": "sun",
+            "amount": 92.09
+        }
+    ],
+    "3rdweek": [
+        {
+            "day": "mon",
+            "amount": 66.23
+        },
+        {
+            "day": "tue",
+            "amount": 74.43
+        },
+        {
+            "day": "wed",
+            "amount": 33.67
+        },
+        {
+            "day": "thu",
+            "amount": 21.41
+        },
+        {
+            "day": "fri",
+            "amount": 48.96
+        },
+        {
+            "day": "sat",
+            "amount": 80.52
+        },
+        {
+            "day": "sun",
+            "amount": 62.89
+        }
+    ],
+    "4thweek": [
+        {
+            "day": "mon",
+            "amount": 74.22
+        },
+        {
+            "day": "tue",
+            "amount": 68.96
+        },
+        {
+            "day": "wed",
+            "amount": 77.62
+        },
+        {
+            "day": "thu",
+            "amount": 85.38
+        },
+        {
+            "day": "fri",
+            "amount": 16.87
+        },
+        {
+            "day": "sat",
+            "amount": 38.86
+        },
+        {
+            "day": "sun",
+            "amount": 86.06
+        }
+    ],
+    "5thweek": [
+        {
+            "day": "mon",
+            "amount": 52.58
+        },
+        {
+            "day": "tue",
+            "amount": 93.18
+        },
+        {
+            "day": "wed",
+            "amount": 11.86
+        },
+        {
+            "day": "thu",
+            "amount": 61.69
+        },
+        {
+            "day": "fri",
+            "amount": 40.18
+        },
+        {
+            "day": "sat",
+            "amount": 62.77
+        },
+        {
+            "day": "sun",
+            "amount": 75.71
+        }
+    ],
+    "6thweek": [
+        {
+            "day": "mon",
+            "amount": 19.43
+        },
+        {
+            "day": "tue",
+            "amount": 29.77
+        },
+        {
+            "day": "wed",
+            "amount": 84.27
+        },
+        {
+            "day": "thu",
+            "amount": 29.61
+        },
+        {
+            "day": "fri",
+            "amount": 66.93
+        },
+        {
+            "day": "sat",
+            "amount": 43.97
+        },
+        {
+            "day": "sun",
+            "amount": 11.11
+        }
+    ],
+    "7thweek": [
+        {
+            "day": "mon",
+            "amount": 50.1
+        },
+        {
+            "day": "tue",
+            "amount": 24.66
+        },
+        {
+            "day": "wed",
+            "amount": 33.43
+        },
+        {
+            "day": "thu",
+            "amount": 72.22
+        },
+        {
+            "day": "fri",
+            "amount": 59.99
+        },
+        {
+            "day": "sat",
+            "amount": 23.27
+        },
+        {
+            "day": "sun",
+            "amount": 48.32
+        }
+    ],
+    "8thweek": [
+        {
+            "day": "mon",
+            "amount": 74.31
+        },
+        {
+            "day": "tue",
+            "amount": 73.56
+        },
+        {
+            "day": "wed",
+            "amount": 32.14
+        },
+        {
+            "day": "thu",
+            "amount": 25.47
+        },
+        {
+            "day": "fri",
+            "amount": 38.24
+        },
+        {
+            "day": "sat",
+            "amount": 53.77
+        },
+        {
+            "day": "sun",
+            "amount": 36.93
+        }
+    ]
+}

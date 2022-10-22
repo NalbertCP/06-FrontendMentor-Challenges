@@ -56,8 +56,7 @@ main > .cards-section{
     border-radius: 0.45em;
     box-shadow: 0.75em 2em 2em #00000021;
     color: var(--white);
-    transition: transform 0.2s, z-index 0.2s;
-    transition: font-size 0.25s;
+    transition: transform 0.25s, z-index 0.25s, font-size 0.25s;
 }
 
 .front-side:hover, .back-side:hover{

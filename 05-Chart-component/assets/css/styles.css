@@ -107,9 +107,9 @@ section.chart-section{
     font-size: 18px;
     justify-content: space-between;
     align-items: flex-end;
-    height: 8.25rem;
+    height: 10.25rem;
     padding-bottom: 1.25rem;
-    margin-top: 2.6rem;
+    margin-top: 0.25rem;
     border-bottom: 1px solid var(--cream);
     color: var(--med-brown);
     text-align: center;
@@ -157,7 +157,7 @@ section.chart-section{
     padding: 0.25rem 0.4rem;
     border-radius: 0.25rem;
     position: absolute;
-    top: -2rem;
+    top: -1.75rem;
     opacity: 0%;
     transition: opacity 0.25s;
 }
@@ -247,5 +247,4 @@ footer{
     .chart-data > .chart-label{
         top: -1.75rem;
     }
-
 }

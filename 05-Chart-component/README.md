@@ -17,10 +17,10 @@
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
-[Expanses chart component | challenge] https://user-images.githubusercontent.com/105606295/197365889-73f1a956-7306-4108-89e9-577f7cc24ee6.png
+[Expanses chart component | challenge] https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
 ```
 
-<img width="850px" src="https://user-images.githubusercontent.com/105606295/196008063-cffb363e-47b5-47e9-b551-98abe17f058c.png">
+<img width="850px" src="https://user-images.githubusercontent.com/105606295/197365889-73f1a956-7306-4108-89e9-577f7cc24ee6.png">
 
 <h2> 💻 Stacks utilizadas</h2>
 <ul>

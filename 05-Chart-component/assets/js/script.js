@@ -13,7 +13,7 @@ async function fetchAndAppend (){
     createWeekFilter(data)
     addFilterListener(data)
 }
-/*Criando as colunas do gráfico*/
+/*Criando o gárfico no component*/
 function appendChart(data){
     let components = data.reduce((acc, value)=>{
         return acc+= `
@@ -27,7 +27,7 @@ function appendChart(data){
     },"")
     document.querySelector(".chart").innerHTML = components
 }
-/*Adicionando altura das colunas e destaque para o maior valor*/
+/*Adicionando altura às colunas do gráfico e destaque para o maior valor*/
 function setBarsHeight(data){
     let maxAmount = data.reduce((acc, value)=> {
         if (acc < value.amount) acc = value.amount

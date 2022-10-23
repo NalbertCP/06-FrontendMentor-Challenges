@@ -13,7 +13,7 @@ async function fetchAndAppend (){
     createWeekFilter(data)
     addFilterListener(data)
 }
-/*Criando o gárfico no component*/
+/*Renderizando o gráfico no componente*/
 function appendChart(data){
     let components = data.reduce((acc, value)=>{
         return acc+= `
@@ -40,7 +40,7 @@ function setBarsHeight(data){
     }
 }
 
-/*Criando filtro de semanas e respectivo event.listener*/
+/*Criando filtro de semanas e respectivo event listener*/
 function createWeekFilter(data){
     const options = Object.keys(data).reduce((acc, week)=>{
         return acc+= `<option value="${week}">${week.slice(0,-4)} week</option>`

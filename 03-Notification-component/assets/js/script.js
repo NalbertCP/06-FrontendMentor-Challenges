@@ -16,14 +16,14 @@ function notificationEvent(event){
     let notification = this
     let targetClass = event.target.className
     if (! elementsClass.every((value)=> value!=targetClass)){
-        if (notification.classList[2]==="read") return event.stopPropagation()
+        if (notification.classList.contains("read")) return event.stopPropagation()
         else return changeNotificationCount(notification)
     }
     changeNotificationCount(notification)
 }
 function changeNotificationCount(notification){
     markNotification(notification)
-    if (notification.classList[2]==="read") noteCount.innerHTML = Number(noteCount.innerHTML) - 1
+    if (notification.classList.contains("read")) noteCount.innerHTML = Number(noteCount.innerHTML) - 1
     else noteCount.innerHTML = Number(noteCount.innerHTML) + 1
 }
 function markNotification(notification){

@@ -57,7 +57,7 @@ function addFilterListener(data){
         document.querySelectorAll(".day").forEach((weekday, index)=>{
             const chartBar = weekday.querySelector(".chart-bar")
             chartBar.style.height = `0rem`
-            chartBar.classList[1] === "biggest-bar" ? chartBar.classList.remove("biggest-bar") : null
+            chartBar.classList.contains("biggest-bar")? chartBar.classList.remove("biggest-bar") : null
             weekday.querySelector(".chart-label").innerHTML = `$${data[selectWeek.value][index].amount}`
         })
         setBarsHeight(data[selectWeek.value])

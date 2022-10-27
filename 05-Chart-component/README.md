@@ -13,6 +13,9 @@
   <li>Filtragem do resumo de gastos por semana</li>
   <li>Visualização do gasto diário em cada barra do gráfico</li>
 </ul>
+<p>
+    Observação: como o este projeto consome dados través do comando fetch(), logo, precisei servir esses dados de forma estática, logo, recomendo que o projeto seja executado em um servidor, a exemplo do plugin LiveServer do VsCode.
+<p
 
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 

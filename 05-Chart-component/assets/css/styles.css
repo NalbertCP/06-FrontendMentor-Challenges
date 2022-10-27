@@ -131,7 +131,7 @@ section.chart-section{
     border-radius: 0.2rem;
     background-color: var(--soft-red);
     cursor: pointer;
-    transition: background-color 0.25s, height 0.5s;
+    transition: background-color 0.5s, height 0.5s;
 }
 
 .chart-bar:hover{

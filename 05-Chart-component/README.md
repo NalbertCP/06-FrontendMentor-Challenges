@@ -14,8 +14,8 @@
   <li>Visualização do gasto diário em cada barra do gráfico</li>
 </ul>
 <p>
-    Observação: como este projeto consome dados través do comando fetch( ), logo, precisei seri-los forma estática, para tanto, recomendo que o projeto seja executado em um servidor, a exemplo do plugin LiveServer do VsCode, caso contrário não será possível consumir os dados durante a aplicação.
-<p
+    Observação: como este projeto consome dados através do comando fetch( ), recomendo que o projeto seja executado em um servidor, a exemplo do plugin LiveServer do VsCode, caso contrário não será possível consumir os dados durante a aplicação.
+</p>
 
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 

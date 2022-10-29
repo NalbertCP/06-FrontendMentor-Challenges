@@ -15,7 +15,7 @@
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
-[Interative card form | challenge] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
+[Interative card form | challenge] 🔗 https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
 ```
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/196008063-cffb363e-47b5-47e9-b551-98abe17f058c.png">
 

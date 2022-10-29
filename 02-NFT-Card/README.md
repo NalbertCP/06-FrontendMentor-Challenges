@@ -11,7 +11,7 @@
 </p>
 
 ```md
-[Original NFT Card challenge] https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
+[Original NFT Card challenge] 🔗 https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
 ```
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193474316-3f03edc8-42b2-4200-90c5-f6e5b6c71769.png">

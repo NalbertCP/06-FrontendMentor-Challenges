@@ -6,7 +6,7 @@
 </div>
 <h2>📋 Descrição</h2>
 <p>
-    Projeto criado a partir de um dos desafios disponíveis na página Front-end Mentor.
+    Projeto desenvolvido partir de um dos desafios disponíveis na página Front-end Mentor.
     O projeto consiste em criar um componente para exibir um resumo das despesas semanais do usuário em um gráfico de barras. Dentre as funcionalidades implementadas estão:
 <p>
 <ul>

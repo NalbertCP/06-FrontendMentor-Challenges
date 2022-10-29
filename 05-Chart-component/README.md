@@ -20,7 +20,7 @@
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
-[Expanses chart component | challenge] https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
+[Expanses chart component | challenge] 🔗 https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
 ```
 
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/197365889-73f1a956-7306-4108-89e9-577f7cc24ee6.png">

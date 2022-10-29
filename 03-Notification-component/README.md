@@ -18,7 +18,7 @@
 <p><b>O design do projeto original fornecido pela <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor</a> segue no link abaixo:</b></p>
 
 ```md
-[Notification component challenge] https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC
+[Notification component challenge] 🔗 https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC
 ```
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193695631-206cccfe-66d5-4ec3-8edc-c54254549b75.png">

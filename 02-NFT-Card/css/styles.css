@@ -187,9 +187,14 @@ footer > .coded-by{
     html{
         font-size: 130%;
     }
+
+    main{
+        justify-content: flex-start;
+    }
     
     main .card{
         width: 100%;
+        min-width: 320px;
         padding: 1.1rem;
     }
 }

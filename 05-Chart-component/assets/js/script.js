@@ -3,15 +3,20 @@ const selectWeek = document.querySelector("#select-week")
 const chartTitle = document.querySelector("h2")
 const totalWeekSpent = document.querySelector(".total-week-spent > div")
 
-fetchAndAppend ()
+main()
 
-/*Buscando os dados em data.json*/
-async function fetchAndAppend (){
-    const data = await (await fetch("./data.json")).json()
-    appendChart(data["1stweek"])
-    setBarsHeight(data["1stweek"])
-    createWeekFilter(data)
-    addFilterListener(data)
+/*Função principa (executa todas as outras)*/
+async function main (){
+    try{
+        const data = await (await fetch("./data.json")).json()
+        appendChart(data["1stweek"])
+        setBarsHeight(data["1stweek"])
+        createWeekFilter(data)
+        addFilterListener(data)
+    } catch(error){
+        console.log(error)
+        window.alert("Something went wrong, please reload the page.")
+    }
 }
 /*Renderizando o gráfico no componente*/
 function appendChart(data){

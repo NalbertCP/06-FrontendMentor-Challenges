@@ -51,7 +51,6 @@ function createWeekFilter(data){
         return acc+= `<option value="${week}">${week.slice(0, -4)} week</option>`
     }, "")
     selectWeek.innerHTML = options
-
 }
 function addFilterListener(data){
     selectWeek.addEventListener("change", ()=>{

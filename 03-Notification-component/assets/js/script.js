@@ -4,7 +4,7 @@ const noteCount = document.querySelector(".notifications-count")
 const elementsClass = ["profile-name", "additional-content", "note-img"]
 
 /*Adicionando event listeners aos elementos*/
-window.addEventListener("click",(event)=>{
+window.addEventListener("click", (event)=>{
     if (event.target.className === "mark-as-read") readAll()
 })
 for (let notefication of notifications){

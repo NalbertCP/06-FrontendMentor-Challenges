@@ -5,7 +5,7 @@ const totalWeekSpent = document.querySelector(".total-week-spent > div")
 
 main()
 
-/*Função principa (executa todas as outras)*/
+/*Função principal (executa todas as outras)*/
 async function main (){
     try{
         const data = await (await fetch("./data.json")).json()
@@ -29,7 +29,7 @@ function appendChart(data){
             </div>
             <span>${value.day}</span>
         </div>`
-    },"")
+    }, "")
     document.querySelector(".chart").innerHTML = components
 }
 /*Adicionando altura às colunas do gráfico e destaque para o maior valor*/
@@ -48,20 +48,20 @@ function setBarsHeight(data){
 /*Criando filtro de semanas e respectivo event listener*/
 function createWeekFilter(data){
     const options = Object.keys(data).reduce((acc, week)=>{
-        return acc+= `<option value="${week}">${week.slice(0,-4)} week</option>`
+        return acc+= `<option value="${week}">${week.slice(0, -4)} week</option>`
     }, "")
     selectWeek.innerHTML = options
 
 }
 function addFilterListener(data){
-    selectWeek.addEventListener("change",()=>{
+    selectWeek.addEventListener("change", ()=>{
         const totalSpent = data[selectWeek.value].reduce((acc, value)=>acc+=value.amount, 0)
-        chartTitle.innerHTML = `Spending - ${selectWeek.value.slice(0,-4)} week`
+        chartTitle.innerHTML = `Spending - ${selectWeek.value.slice(0, -4)} week`
         totalWeekSpent.innerHTML = `$${totalSpent.toFixed(2)}`
 
         document.querySelectorAll(".day").forEach((weekday, index)=>{
             const chartBar = weekday.querySelector(".chart-bar")
-            chartBar.style.height = `0rem`
+            chartBar.style.height = "0rem"
             chartBar.classList.contains("biggest-bar")? chartBar.classList.remove("biggest-bar") : null
             weekday.querySelector(".chart-label").innerHTML = `$${data[selectWeek.value][index].amount}`
         })

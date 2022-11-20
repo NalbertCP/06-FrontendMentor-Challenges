@@ -1,0 +1,15 @@
+{
+  "name": "04-interactive-form",
+  "version": "1.0.0",
+  "description": "<h1>💳 Interactive card form</h1>\r <div class=\"badges\">\r   <img src=\"https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white\">\r   <img src=\"https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white\">\r   <img src=\"https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E\">\r </div>\r <h2>📋 Descrição</h2>\r <p>\r     Projeto desenvolvido em um dos desafios disponíveis na página Front-end Mentor, com objetivo de simular uma página de formulário para preenchimento de dados durante a criação de um cartão de crédito.\r </p>\r <p>\r     O projeto inclui a validação de todos os campos do formulário antes do envio do mesmo, como também, alteração no aspecto visual do cartão de crédito durante o preenchimento de dados.\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.28.0"
+  }
+}

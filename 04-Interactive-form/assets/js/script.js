@@ -44,6 +44,7 @@ function formHandler(){
         isFlagTrue(){
             return flag
         },
+        //Removendo todos os erros do formulário (reset do formulário)
         clearErrors(){
             for (let error of document.querySelectorAll(".input-error")){
                 error.remove()
@@ -52,12 +53,14 @@ function formHandler(){
                 input.classList.remove("invalid-input")
             }
         },
+        //Criando span de error em caso de entradas invalidas no formulário
         createError(message){
             const error = document.createElement("span")
             error.setAttribute("class", "input-error")
             error.innerHTML = message
             return error
         },
+        //Validando entradas vazias em todos os campos do formulário
         validateEmptyInputs(){
             const expDate = document.querySelector(".exp-date-form")
             const fields = document.querySelectorAll(".field")
@@ -76,6 +79,7 @@ function formHandler(){
                 flag = false
             }
         },
+        //Validando o campo de ownername em caso de entrada invalida
         validadeOwnerName(){
             if (ownerInput.value.length<6){
                 ownerInput.parentElement.appendChild(
@@ -84,6 +88,7 @@ function formHandler(){
                 ownerInput.classList.add("invalid-input")
             }
         },
+        //Validando o campo de vencimento do cartão em caso de entrada inválida
         validateCardNumber(){
             if (numberInput.value.length<19){
                 numberInput.parentElement.appendChild(

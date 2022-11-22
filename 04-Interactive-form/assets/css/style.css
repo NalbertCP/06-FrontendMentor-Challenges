@@ -1,12 +1,12 @@
 /* Início - estilos gerais*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
-:root{
+:root {
     --white: #ffffff;
     --light-grayish-violet: #dedddf;
     --dark-grayish-violet: #8e8593;
@@ -15,22 +15,22 @@
     --active-borders: linear-gradient(to right #6448fe, #600594);
 }
 
-html{
+html {
     font-size: 113%;
     transition: font-size 0.25s;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-main.flex{
+main.flex {
     height: 100vh;
     margin: 0 auto;
     justify-content: space-between;
@@ -39,7 +39,7 @@ main.flex{
 /* Fim - estilos gerais*/
 
 /* Início - Estilizando cartões*/
-main > .cards-section{
+main > .cards-section {
     width: 30%;
     height: 100%;
     background: url(../img/bg-main-desktop.png) no-repeat top left;
@@ -48,7 +48,8 @@ main > .cards-section{
     position: relative;
 }
 
-.cards-section > .front-side, .back-side{
+.cards-section > .front-side,
+.back-side {
     flex-shrink: 0;
     font-size: 16px;
     width: 21.125em;
@@ -59,64 +60,65 @@ main > .cards-section{
     transition: transform 0.25s, z-index 0.25s, font-size 0.25s;
 }
 
-.front-side:hover, .back-side:hover{
+.front-side:hover,
+.back-side:hover {
     z-index: 2;
     transform: scale(1.08);
 }
 
-.front-side{
-    background: url(../img/bg-card-front.png) no-repeat center center /cover;
+.front-side {
+    background: url(../img/bg-card-front.png) no-repeat center center / cover;
     margin-left: 20vw;
     margin-bottom: 1.75em;
     padding: 1.5em;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
-.front-side > .card-logo{
+.front-side > .card-logo {
     height: 2.25em;
 }
 
-.card-logo > img{
+.card-logo > img {
     height: 100%;
 }
 
-.card-data .card-number{
+.card-data .card-number {
     font-size: 1.2em;
     letter-spacing: 0.2em;
     margin-bottom: 1em;
 }
 
-.card-data .personal-information{
+.card-data .personal-information {
     justify-content: space-between;
     font-size: 0.65em;
     letter-spacing: 0.2em;
     gap: 0.5em;
 }
 
-.personal-information .owner-name{
+.personal-information .owner-name {
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.back-side{
-    background: url(../img/bg-card-back.png) no-repeat center center /cover;
+.back-side {
+    background: url(../img/bg-card-back.png) no-repeat center center / cover;
     margin-left: 30vw;
     position: relative;
 }
 
-.back-side .card-code{
+.back-side .card-code {
     position: absolute;
-    top: 8.5em; right: 3.5em;
+    top: 8.5em;
+    right: 3.5em;
     font-size: 0.65em;
     letter-spacing: 0.2em;
 }
 /* Fim - Estilizando cartões*/
 
 /* Início - Estilizando formulário de envio*/
-.form-section{
+.form-section {
     height: 100%;
 }
 
@@ -126,21 +128,22 @@ main > .cards-section{
     width: 320px;
 }
 
-.before-send.hide{
+.before-send.hide {
     display: none;
 }
 
-form > .field{
+form > .field {
     width: 100%;
     margin-bottom: 1.25rem;
 }
 
-form input, label{
+form input,
+label {
     display: block;
     width: 100%;
 }
 
-form input{
+form input {
     padding: 0.5rem 0.75rem;
     border: 1px solid #cecece;
     border-radius: 0.35rem;
@@ -152,19 +155,19 @@ form input{
     transition: border-color 0.2s;
 }
 
-input::placeholder{
+input::placeholder {
     color: #d4c6db;
 }
 
-input.invalid-input{
+input.invalid-input {
     border-color: var(--red);
 }
 
-input:focus{
+input:focus {
     border-color: #600594;
 }
 
-form label{
+form label {
     margin-bottom: 0.4rem;
     font-size: 0.55rem;
     font-weight: 600;
@@ -172,7 +175,7 @@ form label{
     letter-spacing: 0.1rem;
 }
 
-form .input-error{
+form .input-error {
     display: block;
     margin-top: 0.4rem;
     font-size: 0.6rem;
@@ -180,28 +183,29 @@ form .input-error{
     color: var(--red);
 }
 
-form > .other-fields{
+form > .other-fields {
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1.25rem;
     gap: 1rem;
 }
 
-.other-fields label{
+.other-fields label {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-form .exp-date-form, form .card-code-form{
+form .exp-date-form,
+form .card-code-form {
     width: 50%;
 }
 
-.exp-date-form > .inputs{
+.exp-date-form > .inputs {
     gap: 0.5rem;
 }
 
-form > input[type=submit]{
+form > input[type="submit"] {
     background-color: var(--very-dark-violet);
     color: var(--white);
     border: none;
@@ -211,41 +215,41 @@ form > input[type=submit]{
     transition: background-color 0.2s;
 }
 
-input[type=submit]:hover{
+input[type="submit"]:hover {
     background-color: #470d69;
 }
 
-input[type=submit]:active{
-    background-color: var(--very-dark-violet)
+input[type="submit"]:active {
+    background-color: var(--very-dark-violet);
 }
 /*Fim - Estilizando formulário de envio*/
 
 /*Início - Estilizando formulário após envio dos dados*/
-.form-sent{
+.form-sent {
     display: none;
 }
 
-.form-sent.show{
+.form-sent.show {
     display: flex;
 }
 
-.form-sent > .content{
+.form-sent > .content {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.content > img{
+.content > img {
     margin-bottom: 1.25rem;
     height: 3.75rem;
 }
 
-.content > h3{
+.content > h3 {
     margin-bottom: 0.75rem;
     letter-spacing: 0.25rem;
     color: var(--very-dark-violet);
 }
 
-.content > p{
+.content > p {
     color: var(--dark-grayish-violet);
     font-size: 0.9rem;
     font-weight: 500;
@@ -253,10 +257,12 @@ input[type=submit]:active{
 /*Fim - Estilizando formulário após envio dos dados*/
 
 /*Media queries*/
-@media (max-width: 800px){
-    html{font-size: 140%;}
+@media (max-width: 800px) {
+    html {
+        font-size: 140%;
+    }
 
-    main.flex{
+    main.flex {
         flex-direction: column;
         min-width: 330px;
         min-height: 704px;
@@ -264,7 +270,7 @@ input[type=submit]:active{
         gap: 3rem;
     }
 
-    main > .cards-section{
+    main > .cards-section {
         width: 100%;
         height: 35%;
         flex-shrink: 0;
@@ -273,54 +279,61 @@ input[type=submit]:active{
         align-items: flex-start;
     }
 
-    .cards-section > .front-side, .back-side{
+    .cards-section > .front-side,
+    .back-side {
         font-size: 14px;
     }
 
-    .front-side{
+    .front-side {
         position: relative;
         z-index: 1;
         margin-left: 1.25em;
         margin-top: -3.125rem;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
-    .back-side{
+    .back-side {
         margin-left: auto;
         margin-right: 1.25em;
         margin-top: 2em;
     }
 
-    .card-data .personal-information, 
-    .back-side .card-code{
+    .card-data .personal-information,
+    .back-side .card-code {
         font-size: 0.7em;
     }
 
-    .back-side .card-code{top: 7.75em;}
+    .back-side .card-code {
+        top: 7.75em;
+    }
 
-    .form-section{
+    .form-section {
         flex: 0;
         padding: 1.125rem;
         align-items: flex-start;
     }
 
-    .form-section > form {width: 100%;}
+    .form-section > form {
+        width: 100%;
+    }
 
-    form > .other-fields{gap: 0.5rem;}
+    form > .other-fields {
+        gap: 0.5rem;
+    }
 
-    .other-fields input{
+    .other-fields input {
         padding: 0.5rem 0 0.5rem 0.75rem;
     }
 
-    .exp-date-form > .inputs{
+    .exp-date-form > .inputs {
         gap: 0.4rem;
     }
 
-    form > input[type=submit]{
+    form > input[type="submit"] {
         font-size: 0.7rem;
     }
 
-    input::placeholder{
+    input::placeholder {
         font-size: 0.75rem;
     }
 }

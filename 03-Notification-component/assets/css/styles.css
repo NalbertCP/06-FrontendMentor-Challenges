@@ -1,12 +1,12 @@
 /*Início - estilos gerais*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Plus Jakarta Sans';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
 }
 
-:root{
+:root {
     --red: #f65351;
     --blue: #0a317b;
     --white: #ffffff;
@@ -18,7 +18,7 @@
     --very-dark-blue: #1c202b;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
 /*Fim - estilos gerais*/
 
 /*Início - Contaier de notificações*/
-main.flex{
+main.flex {
     width: 100%;
     min-height: 100vh;
     min-width: 340px;
@@ -35,7 +35,7 @@ main.flex{
     background-color: var(--very-light-grayish-blue);
 }
 
-.notifications-container{
+.notifications-container {
     flex: 1;
     max-width: 484px;
     background-color: var(--white);
@@ -47,26 +47,26 @@ main.flex{
 /*Fim - Container de notificações*/
 
 /*Início - estilizando o header*/
-section.header{
+section.header {
     justify-content: space-between;
     font-size: 0.7rem;
     margin: 0 0 1.3rem;
 }
 
-.title > h2{
+.title > h2 {
     color: var(--very-dark-blue);
     font-weight: 800;
-    margin-right: 0.4rem
+    margin-right: 0.4rem;
 }
 
-.title > .notifications-count{
+.title > .notifications-count {
     background-color: var(--blue);
     color: var(--white);
     padding: 0.125rem 0.5rem;
     border-radius: 0.25rem;
 }
 
-.header > .mark-as-read{
+.header > .mark-as-read {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -79,18 +79,18 @@ section.header{
     transition: color 0.2s, border-color 0.2s;
 }
 
-.mark-as-read:hover{
+.mark-as-read:hover {
     color: #002d81;
     border-color: 1px solid var(--blue);
 }
 /*Fim - estilizando o header*/
 
 /*Início - estilizando as notificações*/
-section.notifications{
+section.notifications {
     width: 100%;
 }
 
-.notifications > .notification{
+.notifications > .notification {
     width: 100%;
     justify-content: flex-start;
     padding: 0.75rem 0.75rem 0.6rem;
@@ -101,54 +101,54 @@ section.notifications{
     transition: background-color 0.2s;
 }
 
-.notification:last-child{
+.notification:last-child {
     margin-bottom: 0rem;
 }
 
-.notification.read{
+.notification.read {
     background-color: transparent;
 }
 
-.notification{
+.notification {
     align-items: flex-start;
 }
 
-.notification > .avatar{
+.notification > .avatar {
     max-height: fit-content;
     display: flex;
 }
 
-.avatar > img{
+.avatar > img {
     font-size: 0.5rem;
     width: 1.9rem;
     height: 1.9rem;
 }
 
-.notification-message .profile-name{
+.notification-message .profile-name {
     color: var(--very-dark-blue);
     font-weight: 800;
 }
 
-.notification > .notification-message{
+.notification > .notification-message {
     width: 100%;
     font-size: 0.68rem;
     margin-left: 0.75rem;
-    color:var(--dark-grayish-blue)
+    color: var(--dark-grayish-blue);
 }
 
-.notification-message .additional-content{
+.notification-message .additional-content {
     color: var(--dark-grayish-blue);
     font-weight: 800;
     line-height: 1.5;
 }
 
-.notification-message > .created-at-time{
+.notification-message > .created-at-time {
     display: block;
     margin-top: 0.125rem;
-    color:var(--Grayish-blue)
+    color: var(--Grayish-blue);
 }
 
-.notification-message > .private-message{
+.notification-message > .private-message {
     width: 100%;
     padding: 0.75rem;
     margin-top: 0.5rem;
@@ -157,14 +157,14 @@ section.notifications{
     transition: background-color 0.2s;
 }
 
-.private-message:hover{
+.private-message:hover {
     background-color: var(--light-grayish-blue-1);
 }
 
-.notification .unread-marker{
+.notification .unread-marker {
     display: inline-block;
     flex-shrink: 0;
-    margin: 0.30rem 0 0 0.3rem;
+    margin: 0.3rem 0 0 0.3rem;
     background-color: var(--red);
     height: 0.35rem;
     width: 0.35rem;
@@ -172,18 +172,18 @@ section.notifications{
     transition: opacity 0.2s;
 }
 
-.unread-marker.hidden{
+.unread-marker.hidden {
     opacity: 0%;
 }
 
-.notification > .notification-image{
+.notification > .notification-image {
     flex-shrink: 0;
     max-width: 2.1rem;
     height: 2.1rem;
     margin-left: auto;
 }
 
-.notification-image > img{
+.notification-image > img {
     width: 100%;
     height: 100%;
     font-size: 0.5rem;
@@ -192,32 +192,34 @@ section.notifications{
     transition: 0.2s;
 }
 
-.notification-image > img:hover{
+.notification-image > img:hover {
     border-color: var(--light-grayish-blue-2);
 }
 
-.profile-name:hover, .additional-content:hover{
+.profile-name:hover,
+.additional-content:hover {
     color: var(--blue);
 }
 /*Fim - estilizando as notificações*/
 
 /*Início - atribuições*/
-.atribuitions{
+.atribuitions {
     text-align: center;
     margin-top: 1.3rem;
     font-size: 0.6rem;
 }
 
-.atribuitions > a, .atribuitions > span{
+.atribuitions > a,
+.atribuitions > span {
     text-decoration: none;
     display: block;
 }
 
-.atribuitions > span > b{
+.atribuitions > span > b {
     color: var(--dark-grayish-blue);
 }
 
-.atribuitions > a{
+.atribuitions > a {
     margin-bottom: 0.25rem;
     color: var(--blue);
     font-weight: bold;
@@ -225,41 +227,41 @@ section.notifications{
 /*Fim - atribuições*/
 
 /* Media queries*/
-@media only screen and (max-width:480px){
-    html{
+@media only screen and (max-width: 480px) {
+    html {
         font-size: 127%;
     }
 
-    body{
+    body {
         min-width: fit-content;
     }
 
-    main.flex{
+    main.flex {
         padding: 0;
         justify-content: flex-start;
     }
 
-    .notifications-container{
+    .notifications-container {
         margin-top: 0;
-        min-height:100vh;
+        min-height: 100vh;
         padding: 1.2rem 0.75rem;
         border-radius: 0rem;
     }
 
-    section.header{
+    section.header {
         margin: 0 0 1.2rem;
     }
 
-    .notifications > .notification{
+    .notifications > .notification {
         padding: 0.75rem;
         margin-bottom: 0.55rem;
     }
 
-    .notification:last-child{
+    .notification:last-child {
         margin-bottom: 0rem;
     }
 
-    .notification-message > .private-message{
+    .notification-message > .private-message {
         padding: 0.75rem;
     }
 }

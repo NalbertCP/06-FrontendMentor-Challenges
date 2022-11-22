@@ -1,12 +1,12 @@
 /*Início - estilos gerais*/
-*{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
-:root{
+:root {
     --soft-red: #ec775f;
     --cyan: #76b5bc;
     --dark-brown: #382314;
@@ -15,21 +15,21 @@
     --pale-orange: #fffaf5;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-span{
+span {
     display: block;
 }
 
-html{
+html {
     font-size: 112.5%;
-} 
+}
 
-body{
+body {
     background-color: var(--cream);
     min-height: 100vh;
     flex-direction: column;
@@ -37,58 +37,58 @@ body{
 /*Fim - estilos gerais*/
 
 /*Início - container principal*/
-main{
+main {
     min-width: 416px;
     padding: 0 0.75rem;
 }
 
-main > section{
+main > section {
     border-radius: 0.75rem;
 }
 /*Fim - container principal*/
 
 /*Início - estilizando sessão do saldo*/
-section.balance-section{
+section.balance-section {
     padding: 1.125rem 1.25rem;
     background-color: var(--soft-red);
     margin-bottom: 1rem;
     justify-content: space-between;
-    color: var(--pale-orange)
+    color: var(--pale-orange);
 }
 
-.balance-section > .component-logo{
-    height:2rem;
+.balance-section > .component-logo {
+    height: 2rem;
     margin-right: 0.25rem;
 }
 
-.component-logo > img{
+.component-logo > img {
     height: 100%;
 }
 
-.my-balance > span{
+.my-balance > span {
     font-size: 0.75rem;
     margin-bottom: 0.25rem;
     color: var(--cream);
 }
 
-.my-balance > div{
+.my-balance > div {
     font-size: 1.25rem;
     font-weight: 700;
 }
 /*Fim - estilizando sessão do saldo*/
 
 /*Início - estilizando sessão do gráfico*/
-section.chart-section{
+section.chart-section {
     background-color: var(--pale-orange);
     padding: 1.25rem 1.7rem;
 }
 
-.chart-section h2{
+.chart-section h2 {
     font-size: 1.3rem;
     color: var(--dark-brown);
 }
 
-.chart-section #select-week{
+.chart-section #select-week {
     margin-top: 0.5rem;
     outline: none;
     border: 2px solid var(--med-brown);
@@ -99,11 +99,11 @@ section.chart-section{
     transition: background-color 0.25s;
 }
 
-#select-week:focus{
+#select-week:focus {
     background-color: var(--cream);
 }
 
-.chart-section > .chart{
+.chart-section > .chart {
     font-size: 18px;
     justify-content: space-between;
     align-items: flex-end;
@@ -115,17 +115,17 @@ section.chart-section{
     text-align: center;
 }
 
-.chart .chart-data{
+.chart .chart-data {
     margin-bottom: 0.25rem;
     position: relative;
     flex-direction: column;
 }
 
-.day > span{
-    font-size: 0.6rem
+.day > span {
+    font-size: 0.6rem;
 }
 
-.chart-data > .chart-bar{
+.chart-data > .chart-bar {
     height: 0;
     width: 2rem;
     border-radius: 0.2rem;
@@ -134,25 +134,25 @@ section.chart-section{
     transition: background-color 0.5s, height 0.5s;
 }
 
-.chart-bar:hover{
+.chart-bar:hover {
     background-color: #fca492;
 }
 
-.chart-bar.biggest-bar{
+.chart-bar.biggest-bar {
     background-color: var(--cyan);
 }
 
-.biggest-bar:hover{
+.biggest-bar:hover {
     background-color: #a6d8dd;
 }
 
-.chart-bar:hover + .chart-label{
+.chart-bar:hover + .chart-label {
     opacity: 100%;
 }
 
-.chart-data > .chart-label{
+.chart-data > .chart-label {
     background-color: var(--dark-brown);
-    color :var(--pale-orange);
+    color: var(--pale-orange);
     font-size: 0.65rem;
     padding: 0.25rem 0.4rem;
     border-radius: 0.25rem;
@@ -167,28 +167,28 @@ section.chart-section{
     margin-top: 1.125rem;
 }
 
-.total-week-spent > span{
+.total-week-spent > span {
     font-size: 0.75rem;
     color: var(--med-brown);
 }
 
-.total-week-spent > div{
+.total-week-spent > div {
     font-size: 2rem;
     font-weight: 700;
     color: var(--dark-brown);
 }
 
-.last-month-variation{
+.last-month-variation {
     margin-top: 1rem;
     text-align: right;
 }
 
-.last-month-variation > span{
+.last-month-variation > span {
     font-size: 0.75rem;
-    color: var(--med-brown); 
+    color: var(--med-brown);
 }
 
-.last-month-variation > div{
+.last-month-variation > div {
     font-weight: 700;
     color: var(--dark-brown);
     font-size: 0.75rem;
@@ -196,23 +196,23 @@ section.chart-section{
 /*Fim - estilizando sessão do gráfico*/
 
 /*Início - footer*/
-footer{
+footer {
     font-size: 0.7rem;
     margin-top: 1.5rem;
     text-align: center;
 }
 
-.attributions a{
+.attributions a {
     color: #7a553a;
     text-decoration: none;
     transition: color 0.25s;
 }
 
-.attributions a:hover{
-    color: var(--soft-red)
+.attributions a:hover {
+    color: var(--soft-red);
 }
 
-.attributions > span{
+.attributions > span {
     font-weight: 700;
     color: var(--med-brown);
 }
@@ -220,31 +220,31 @@ footer{
 
 /*Media queries*/
 @media only screen and (max-width: 420px) {
-    html{
+    html {
         font-size: 120%;
     }
 
-    body{
+    body {
         min-width: fit-content;
         align-items: flex-start;
     }
 
-    main{
+    main {
         max-width: 100%;
         min-width: 380px;
     }
 
-    .chart-section > .chart{
+    .chart-section > .chart {
         font-size: 24px;
         margin-top: 2.25rem;
         height: 9.75rem;
     }
 
-    .chart-data > .chart-bar{
+    .chart-data > .chart-bar {
         width: 1.75rem;
     }
 
-    .chart-data > .chart-label{
+    .chart-data > .chart-label {
         top: -1.75rem;
     }
 }

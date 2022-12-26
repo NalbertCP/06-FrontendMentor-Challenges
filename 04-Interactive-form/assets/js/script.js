@@ -7,7 +7,7 @@ const cvcInput = document.querySelector("#cvc-code")
 const mainForm = document.querySelector(".before-send")
 const formSent = document.querySelector(".form-sent")
 
-/*Criando manipulares de eventos*/
+/*Criando manipuladores de eventos*/
 const cardsEvents = cardEventsHandler()
 const formEventHandler = formHandler()
 

@@ -23,9 +23,9 @@ function notificationEvent(event) {
 }
 function changeNotificationCount(notification) {
     markNotification(notification)
-    if (notification.classList.contains("read"))
+    if (notification.classList.contains("read")) {
         noteCount.innerHTML = Number(noteCount.innerHTML) - 1
-    else noteCount.innerHTML = Number(noteCount.innerHTML) + 1
+    } else noteCount.innerHTML = Number(noteCount.innerHTML) + 1
 }
 function markNotification(notification) {
     notification.classList.toggle("read")

@@ -1,20 +1,24 @@
 /*Início - Estilos gerais*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --main-dark-blue: #0d192b;
     --card-dark-blue: #14253d;
     --line-dark-blue: #2e415c;
     --white: #ffffff;
     --text-light-blue: #a9b8cfd7;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
-.flex{
+body {
+    min-width: fit-content;
+}
+
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +26,7 @@
 /*Fim - Estilos gerais*/
 
 /*Início - Estilizando o card NFT*/
-main{
+main {
     display: grid;
     place-content: center;
     width: 100%;
@@ -31,7 +35,7 @@ main{
     background-color: var(--main-dark-blue);
 }
 
-main > .card{
+main > .card {
     width: 254px;
     background-color: var(--card-dark-blue);
     padding: 1.12rem;
@@ -44,13 +48,13 @@ main > .card{
     margin-bottom: 1rem;
 }
 
-.card-image{
+.card-image {
     position: relative;
     max-height: fit-content;
     cursor: pointer;
 }
 
-.card-image > .card-image-overlay{
+.card-image > .card-image-overlay {
     position: absolute;
     justify-content: center;
     height: 100%;
@@ -61,32 +65,32 @@ main > .card{
     transition: opacity 0.2s;
 }
 
-.card-image-overlay > img{
+.card-image-overlay > img {
     transform: rotateX(90deg);
     width: 2rem;
     height: 2rem;
     transition: transform 0.2s;
 }
 
-.card-image:hover .card-image-overlay{
+.card-image:hover .card-image-overlay {
     opacity: 100%;
 }
 
-.card-image:hover > .card-image-overlay > img{
+.card-image:hover > .card-image-overlay > img {
     transform: rotateX(0deg);
 }
 
-.card-image > img{
+.card-image > img {
     width: 100%;
     border-radius: 0.5rem;
 }
 
-.card-content{
+.card-content {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--line-dark-blue);
 }
 
-.card-content h2{
+.card-content h2 {
     color: var(--white);
     font-size: 1rem;
     font-weight: 600;
@@ -95,11 +99,11 @@ main > .card{
     cursor: pointer;
 }
 
-.card-content h2:hover{
-    color: #00FFF8;
+.card-content h2:hover {
+    color: #00fff8;
 }
 
-.card-content p{
+.card-content p {
     color: var(--text-light-blue);
     font-size: 0.8rem;
     font-weight: 300;
@@ -107,39 +111,40 @@ main > .card{
     line-height: 1.5;
 }
 
-.market-content > .price, .time-left{
+.market-content > .price,
+.time-left {
     gap: 5px;
     font-size: 0.75rem;
     font-weight: 400;
 }
 
-.price{
-    color: #00FFF8;
+.price {
+    color: #00fff8;
 }
 
-.price > img{
+.price > img {
     max-width: 0.8rem;
     height: 0.8rem;
     font-size: 0.6rem;
 }
 
-.time-left{
+.time-left {
     color: var(--text-light-blue);
 }
 
-.time-left > img{
+.time-left > img {
     max-width: 0.8rem;
     height: 0.8rem;
-    font-size: 0.6rem;    
+    font-size: 0.6rem;
 }
 
-.card .created-by{
+.card .created-by {
     justify-content: flex-start;
     gap: 12px;
     margin-bottom: 0.2rem;
 }
 
-.created-by > img{
+.created-by > img {
     width: 1.5rem;
     height: 1.5rem;
     font-size: 0.6rem;
@@ -147,52 +152,54 @@ main > .card{
     border: 1px solid var(--white);
 }
 
-.created-by > p{
+.created-by > p {
     color: var(--text-light-blue);
     font-weight: 300;
     font-size: 0.75rem;
 }
 
-.created-by span{
+.created-by span {
     color: var(--white);
     cursor: pointer;
     transition: color 0.2s;
 }
 
-.created-by span:hover{
-    color: #00FFF8;
+.created-by span:hover {
+    color: #00fff8;
 }
 /*Fim - Estilizando o card NFT*/
 
 /*Início - Footer*/
-footer > .coded-by{
+footer > .coded-by {
     text-align: center;
     font-size: 0.75rem;
 }
 
-.coded-by > p, .coded-by > a{
-    color:var(--white);
+.coded-by > p,
+.coded-by > a {
+    color: var(--white);
     font-weight: 300;
     line-height: 1.5;
     text-decoration: none;
 }
 
-.coded-by > a, .coded-by span{
-    color: #00FFF8;
+.coded-by > a,
+.coded-by span {
+    color: #00fff8;
 }
 /*Fim - Footer*/
 
 /*Media queries*/
-@media only screen and (max-width:375px){
-    html{
+@media only screen and (max-width: 375px) {
+    html {
         font-size: 130%;
     }
 
-    main{
+    main {
         justify-content: flex-start;
     }
-    
-    main .card{
+
+    main .card {
         width: 100%;
         min-width: 320px;
         padding: 1.1rem;

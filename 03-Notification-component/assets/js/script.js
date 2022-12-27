@@ -7,8 +7,8 @@ const elementsClass = ["profile-name", "additional-content", "note-img"]
 window.addEventListener("click", (event) => {
     if (event.target.className === "mark-as-read") readAll()
 })
-for (let notefication of notifications) {
-    notefication.addEventListener("click", notificationEvent)
+for (let notification of notifications) {
+    notification.addEventListener("click", notificationEvent)
 }
 
 /*Funções*/
@@ -23,7 +23,8 @@ function notificationEvent(event) {
 }
 function changeNotificationCount(notification) {
     markNotification(notification)
-    if (notification.classList.contains("read")) noteCount.innerHTML = Number(noteCount.innerHTML) - 1
+    if (notification.classList.contains("read"))
+        noteCount.innerHTML = Number(noteCount.innerHTML) - 1
     else noteCount.innerHTML = Number(noteCount.innerHTML) + 1
 }
 function markNotification(notification) {

@@ -33,7 +33,7 @@ function formHandler() {
             flag = true
             event.preventDefault()
             this.clearErrors()
-            this.validadeOwnerName()
+            this.validateOwnerName()
             this.validateCardNumber()
             this.validateEmptyInputs()
             if (flag === true) {
@@ -80,9 +80,11 @@ function formHandler() {
             }
         },
         //Validando o campo de ownername em caso de entrada invalida
-        validadeOwnerName() {
+        validateOwnerName() {
             if (ownerInput.value.length < 6) {
-                ownerInput.parentElement.appendChild(this.createError("must have at leats 6 caracters."))
+                ownerInput.parentElement.appendChild(
+                    this.createError("must have at leats 6 caracters.")
+                )
                 flag = false
                 ownerInput.classList.add("invalid-input")
             }

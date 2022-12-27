@@ -262,6 +262,10 @@ input[type="submit"]:active {
         font-size: 140%;
     }
 
+    body {
+        min-width: fit-content;
+    }
+
     main.flex {
         flex-direction: column;
         min-width: 330px;

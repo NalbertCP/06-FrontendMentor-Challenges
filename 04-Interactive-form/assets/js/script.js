@@ -28,14 +28,65 @@ formSent.addEventListener("submit", (event) => {
 /*Função: manipulando enventos do formulário*/
 function formHandler() {
     let flag = false
+    //Removendo todos os erros do formulário (reset do formulário)
+    function clearErrors() {
+        for (let error of document.querySelectorAll(".input-error")) {
+            error.remove()
+        }
+        for (let input of document.querySelectorAll("input")) {
+            input.classList.remove("invalid-input")
+        }
+    }
+    //Criando span de error em caso de entradas invalidas no formulário
+    function createError(message) {
+        const error = document.createElement("span")
+        error.setAttribute("class", "input-error")
+        error.innerHTML = message
+        return error
+    }
+    //Validando entradas vazias em todos os campos do formulário
+    function validateEmptyInputs() {
+        const expDate = document.querySelector(".exp-date-form")
+        const fields = document.querySelectorAll(".field")
+        for (let field of fields) {
+            const input = field.querySelector("input")
+            if (input.value === "") {
+                field.appendChild(createError("can't be blank."))
+                input.classList.add("invalid-input")
+                flag = false
+            }
+        }
+        if (yearInput.value === "" || mounthInput.value === "") {
+            expDate.appendChild(createError("can't be blank"))
+            yearInput.value === "" ? yearInput.classList.add("invalid-input") : null
+            mounthInput.value === "" ? mounthInput.classList.add("invalid-input") : null
+            flag = false
+        }
+    }
+    //Validando o campo de ownername em caso de entrada invalida
+    function validateOwnerName() {
+        if (ownerInput.value.length < 6) {
+            ownerInput.parentElement.appendChild(createError("must have at leats 6 caracters."))
+            flag = false
+            ownerInput.classList.add("invalid-input")
+        }
+    }
+    //Validando o campo de vencimento do cartão em caso de entrada inválida
+    function validateCardNumber() {
+        if (numberInput.value.length < 19) {
+            numberInput.parentElement.appendChild(createError("must have 16 caracters."))
+            flag = false
+            numberInput.classList.add("invalid-input")
+        }
+    }
     return {
         main(event) {
             flag = true
             event.preventDefault()
-            this.clearErrors()
-            this.validateOwnerName()
-            this.validateCardNumber()
-            this.validateEmptyInputs()
+            clearErrors()
+            validateOwnerName()
+            validateCardNumber()
+            validateEmptyInputs()
             if (flag === true) {
                 mainForm.classList.add("hide")
                 formSent.classList.add("show")
@@ -43,59 +94,6 @@ function formHandler() {
         },
         isFlagTrue() {
             return flag
-        },
-        //Removendo todos os erros do formulário (reset do formulário)
-        clearErrors() {
-            for (let error of document.querySelectorAll(".input-error")) {
-                error.remove()
-            }
-            for (let input of document.querySelectorAll("input")) {
-                input.classList.remove("invalid-input")
-            }
-        },
-        //Criando span de error em caso de entradas invalidas no formulário
-        createError(message) {
-            const error = document.createElement("span")
-            error.setAttribute("class", "input-error")
-            error.innerHTML = message
-            return error
-        },
-        //Validando entradas vazias em todos os campos do formulário
-        validateEmptyInputs() {
-            const expDate = document.querySelector(".exp-date-form")
-            const fields = document.querySelectorAll(".field")
-            for (let field of fields) {
-                const input = field.querySelector("input")
-                if (input.value === "") {
-                    field.appendChild(this.createError("can't be blank."))
-                    input.classList.add("invalid-input")
-                    flag = false
-                }
-            }
-            if (yearInput.value === "" || mounthInput.value === "") {
-                expDate.appendChild(this.createError("can't be blank"))
-                yearInput.value === "" ? yearInput.classList.add("invalid-input") : null
-                mounthInput.value === "" ? mounthInput.classList.add("invalid-input") : null
-                flag = false
-            }
-        },
-        //Validando o campo de ownername em caso de entrada invalida
-        validateOwnerName() {
-            if (ownerInput.value.length < 6) {
-                ownerInput.parentElement.appendChild(
-                    this.createError("must have at leats 6 caracters.")
-                )
-                flag = false
-                ownerInput.classList.add("invalid-input")
-            }
-        },
-        //Validando o campo de vencimento do cartão em caso de entrada inválida
-        validateCardNumber() {
-            if (numberInput.value.length < 19) {
-                numberInput.parentElement.appendChild(this.createError("must have 16 caracters."))
-                flag = false
-                numberInput.classList.add("invalid-input")
-            }
         }
     }
 }

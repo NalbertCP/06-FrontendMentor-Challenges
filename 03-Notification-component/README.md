@@ -24,7 +24,7 @@ Uma página de notificações minimalista criada com HTML, CSS e Java Script. O 
 
 -   HTML
 -   CSS
--   Java Script
+-   JavaScript
 
 ## 💵 Licença
 

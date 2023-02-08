@@ -27,7 +27,7 @@ O projeto consiste em criar um componente para exibir um resumo das despesas sem
 
 -   HTML
 -   CSS
--   Java Script
+-   JavaScript
 
 ## 💵 Licença
 

@@ -20,7 +20,7 @@ Projeto desenvolvido em um dos desafios disponíveis na página Frontend Mentor,
 
 -   HTML
 -   CSS
--   Java Script
+-   JavaScript
 
 ## 💵 Licença
 

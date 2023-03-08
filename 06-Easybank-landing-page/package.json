@@ -1,8 +1,17 @@
 {
-    "name": "easybank",
+    "name": "06-easybank-landing-page",
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "files": [
+        "public",
+        "src",
+        "LICENSE",
+        "postcss.config.js",
+        "README.md",
+        "tailwind.config.js",
+        "vite.config.js"
+      ],
     "scripts": {
         "dev": "vite --host --port 3000",
         "build": "vite build",

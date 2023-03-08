@@ -1,0 +1,79 @@
+/*Início - Header*/
+header {
+    @apply w-full fixed z-10 h-16 m-auto bg-white px-6;
+    @apply mdd:px-8 mdd:relative mdd:h-20;
+}
+
+header > .inner-container {
+    @apply gap-4 visible;
+    @apply mdd:invisible;
+}
+
+header > .inner-container.is-visible {
+    @apply visible;
+}
+
+header .toggle-button {
+    @apply ml-auto block py-2 px-3;
+    @apply mdd:hidden;
+}
+
+.toggle-button .menu-icon-bars {
+    @apply shrink-0 w-6 h-[2px] rounded-full bg-neutral-600 transition-all
+    duration-200;
+}
+
+.open > span:first-child {
+    @apply rotate-45 translate-y-[6px];
+}
+
+.open > span:nth-child(2) {
+    @apply w-0;
+}
+
+.open > span:last-child {
+    @apply -rotate-45 -translate-y-[6px];
+}
+
+.fade-out {
+    @apply animate-[fade-menu_0.2s_forwards] mdd:animate-none;
+}
+
+.show-up {
+    @apply animate-[show-menu_0.2s_forwards] mdd:animate-none;
+}
+
+.nav-list {
+    @apply flex items-center gap-4 flex-col mdd:w-full bg-white rounded-lg
+    px-5 py-7 min-w-fit transition duration-200;
+    @apply mdd:flex-row mdd:h-full mdd:w-auto mdd:bg-transparent mdd:p-0 mdd:gap-6;
+}
+
+.nav-list.slide-up {
+    @apply animate-[slide-up_0.2s_forwards] mdd:animate-none;
+}
+
+.nav-list.slide-down {
+    @apply animate-[slide-down_0.2s_forwards] mdd:animate-none;
+}
+
+.nav-item {
+    @apply relative h-full flex items-center visible;
+    @apply mdd:invisible;
+}
+
+.nav-item.is-visible {
+    @apply visible;
+}
+
+.nav-link {
+    @apply text-[var(--dark-blue)] hover:text-[var(--dark-blue)] font-normal
+    transition duration-100 hover:after:opacity-100 text-lg
+    focus-visible:after:opacity-100 focus-visible:text-[var(--dark-blue)];
+    @apply mdd:text-[var(--grayish-blue)] mdd:font-light mdd:text-base;
+    @apply after:transition-all after:duration-100 after:w-full after:opacity-0
+    after:content-[''] after:absolute after:left-0 after:top-full after:h-1
+    after:-translate-y-full after:bg-gradient-to-r after:from-[var(--lime-green)]
+    after:to-[var(--gright-cyan)] after:rounded-sm;
+}
+/*Fim - Header*/

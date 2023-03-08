@@ -1,0 +1,46 @@
+/*Início - Footer*/
+footer .inner-container {
+    @apply gap-y-8 grid items-start grid-cols-1 h-fit;
+    @apply mdd:gap-y-0 mdd:grid-cols-[1fr_1fr_2fr];
+}
+
+footer .link-list {
+    @apply grid text-white font-light  text-[0.9rem] grid-cols-1 gap-x-0 gap-y-3
+    text-center invisible;
+    @apply mdd:text-sm mdd:grid-cols-2 mdd:gap-x-16 mdd:gap-y-4 mdd:text-left;
+}
+
+footer .footer-link {
+    @apply block text-white hover:text-[var(--lime-green)] transition duration-100
+    whitespace-nowrap focus-visible:text-[var(--lime-green)];
+}
+
+.social-wrapper {
+    @apply h-full flex flex-col items-center justify-between gap-8 invisible;
+    @apply mdd:gap-0 mdd:items-start;
+}
+
+.social-links {
+    @apply flex items-center gap-5;
+    @apply mdd:gap-[0.82rem];
+}
+
+.social-icon {
+    @apply fill-white group-hover/social:fill-[var(--lime-green)]
+    transition-all duration-100 scale-[1.2] group-hover/social:scale-[1.4]
+    group-focus-visible/social:fill-[var(--lime-green)]
+    group-focus-visible/social:scale-[1.4];
+    @apply mdd:scale-100 mdd:group-hover/social:scale-110
+    mdd:group-focus-visible/social:scale-110;
+}
+
+.credits-wrapper {
+    @apply h-full flex flex-col justify-start items-center text-center gap-6
+    invisible;
+    @apply mdd:items-end mdd:justify-between mdd:gap-0 mdd:text-right;
+}
+
+footer .req-invite-button {
+    @apply hover:ring-white/20 focus-visible:ring-white/20;
+}
+/*Fim - Footer*/

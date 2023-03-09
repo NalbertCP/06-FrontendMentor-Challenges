@@ -8,20 +8,21 @@ export default function useScroll() {
     useEffect(scrollObserver, [])
 
     function scrollObserver() {
-        //Retornando ao topo após o recarregamento da página.
+        //Retornando ao topo após caso haja recarregamento da página.
         history.scrollRestoration = "manual"
 
-        const observer = new IntersectionObserver(
-            (entry) => {
-                const isIntersecting = entry[0].isIntersecting
-                const positiveClientRectTop = entry[0].boundingClientRect.y > 0
-                if (isIntersecting && positiveClientRectTop) setIsVisible(true)
-                if (!isIntersecting && positiveClientRectTop) setIsVisible(false)
-            },
-            { threshold: 0.5 }
-        )
+        //Iniciando o observador e atribuindo o elemento que será observado.
+        const observer = new IntersectionObserver(observerCallback, { threshold: 0.5 })
         observer.observe(document.querySelector(".service:first-child"))
+
         return () => observer.disconnect()
+    }
+
+    function observerCallback(entry) {
+        const isIntersecting = entry[0].isIntersecting
+        const positiveClientRectTop = entry[0].boundingClientRect.y > 0
+        if (isIntersecting && positiveClientRectTop) setIsVisible(true)
+        if (!isIntersecting && positiveClientRectTop) setIsVisible(false)
     }
 
     return { isVisible }

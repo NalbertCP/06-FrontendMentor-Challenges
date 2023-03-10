@@ -21,7 +21,7 @@ Landing page desenvolvida a partir de um dos desafios disponíveis na página da
 1. Clone este repositório;
 2. Baixe as dependências deste projeto com npm install;
 3. Inicie a aplicação com npm run dev;
-4. Em seu navegador navega até http://localhost:3000/ para visualizar o projeto.
+4. Navegue até http://localhost:3000/ para visualizar o projeto.
 
 ## 💻 Stacks utilizadas
 

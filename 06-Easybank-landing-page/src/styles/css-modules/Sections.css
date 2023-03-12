@@ -14,7 +14,7 @@
 }
 
 .intro-section .outter-container {
-    background-image: url("../../public/images/bg-intro-desktop.svg");
+    background-image: url("/images/bg-intro-desktop.svg");
     background-position: calc(62vw - 42vh) -180px;
     @apply h-full max-w-[1440px] m-auto px-0 bg-fixed bg-no-repeat relative
     overflow-hidden;
@@ -52,7 +52,7 @@
     }
 
     .mockups-wrapper {
-        background-image: url("../../public/images/bg-intro-mobile.svg");
+        background-image: url("/images/bg-intro-mobile.svg");
     }
 }
 /* Fim - Sessão inicial */

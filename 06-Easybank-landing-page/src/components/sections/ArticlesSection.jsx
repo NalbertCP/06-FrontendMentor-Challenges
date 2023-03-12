@@ -1,4 +1,8 @@
 import React from "react"
+import confetti from "/images/image-confetti.jpg"
+import currency from "/images/image-currency.jpg"
+import airplane from "/images/image-plane.jpg"
+import restaurant from "/images/image-restaurant.jpg"
 
 //Sessão de artigos (terceira sessão) utilizada em App.jsx
 export default function ArticlesSection() {
@@ -12,7 +16,7 @@ export default function ArticlesSection() {
                             <div className="h-[12.5rem]">
                                 <img
                                     className="w-full h-full object-cover"
-                                    src="../../public/images/image-currency.jpg"
+                                    src={currency}
                                     alt="some euro paper currency"
                                 />
                             </div>
@@ -34,7 +38,7 @@ export default function ArticlesSection() {
                             <div className="h-[12.5rem]">
                                 <img
                                     className="w-full h-full object-cover"
-                                    src="../../public/images/image-restaurant.jpg"
+                                    src={restaurant}
                                     alt="a restaurant with some menu dishes "
                                 />
                             </div>
@@ -56,7 +60,7 @@ export default function ArticlesSection() {
                             <div className="h-[12.5rem]">
                                 <img
                                     className="w-full h-full object-cover"
-                                    src="../../public/images/image-plane.jpg"
+                                    src={airplane}
                                     alt="a plane flying with focus to its right wing"
                                 />
                             </div>
@@ -78,7 +82,7 @@ export default function ArticlesSection() {
                             <div className="h-[12.5rem]">
                                 <img
                                     className="w-full h-full object-cover"
-                                    src="../../public/images/image-confetti.jpg"
+                                    src={confetti}
                                     alt="colorful confetti"
                                 />
                             </div>

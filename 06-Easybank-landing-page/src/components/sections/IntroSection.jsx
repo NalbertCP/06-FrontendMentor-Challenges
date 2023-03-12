@@ -1,5 +1,6 @@
 import React from "react"
 import FancyButton from "../FancyButton"
+import phoneMockups from "/images/image-mockups.png"
 
 //Sessão inicial da página utilizada em App.jsx
 export default function IntroSection() {
@@ -19,7 +20,7 @@ export default function IntroSection() {
                     <div className="mockups-wrapper">
                         <img
                             className="w-full h-full m-auto max-w-[500px] mdd:max-w-none"
-                            src="../public/images/image-mockups.png"
+                            src={phoneMockups}
                             alt="easybank mobile mockup"
                         />
                     </div>

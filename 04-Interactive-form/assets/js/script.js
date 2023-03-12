@@ -57,7 +57,7 @@ function formHandler() {
             }
         }
         if (yearInput.value === "" || mounthInput.value === "") {
-            expDate.appendChild(createError("can't be blank"))
+            expDate.appendChild(createError("can't be blank."))
             yearInput.value === "" ? yearInput.classList.add("invalid-input") : null
             mounthInput.value === "" ? mounthInput.classList.add("invalid-input") : null
             flag = false
@@ -66,7 +66,7 @@ function formHandler() {
     //Validando o campo de ownername em caso de entrada invalida
     function validateOwnerName() {
         if (ownerInput.value.length < 6) {
-            ownerInput.parentElement.appendChild(createError("must have at leats 6 caracters."))
+            ownerInput.parentElement.appendChild(createError("must have at least 6 characters."))
             flag = false
             ownerInput.classList.add("invalid-input")
         }
@@ -74,7 +74,7 @@ function formHandler() {
     //Validando o campo de vencimento do cartão em caso de entrada inválida
     function validateCardNumber() {
         if (numberInput.value.length < 19) {
-            numberInput.parentElement.appendChild(createError("must have 16 caracters."))
+            numberInput.parentElement.appendChild(createError("must have 16 characters."))
             flag = false
             numberInput.classList.add("invalid-input")
         }

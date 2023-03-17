@@ -7,10 +7,10 @@
         "public",
         "src",
         "LICENSE",
-        "postcss.config.js",
+        "postcss.config.cjs",
         "README.md",
-        "tailwind.config.js",
-        "vite.config.js"
+        "tailwind.config.cjs",
+        "vite.config.cjs"
     ],
     "scripts": {
         "dev": "vite --host --port 3000",

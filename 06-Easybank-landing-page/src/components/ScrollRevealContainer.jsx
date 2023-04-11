@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import ScrollReveal from "scrollreveal"
 
 //Componente responsável por atribuir efeitos de transição
-//durante eventos de scroll, para alguns elementos da páginas
+//durante eventos de scroll, para alguns elementos da página
 export default function ScrollRevealContainer({ children }) {
     function headerReveal() {
         const innerContainer = document.querySelector("header > .inner-container")

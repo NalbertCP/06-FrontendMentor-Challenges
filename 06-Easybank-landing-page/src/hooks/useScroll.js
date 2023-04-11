@@ -8,7 +8,7 @@ export default function useScroll() {
     useEffect(scrollObserver, [])
 
     function scrollObserver() {
-        //Retornando ao topo após caso haja recarregamento da página.
+        //Retornando ao topo da página em caso de recarregamento.
         history.scrollRestoration = "manual"
 
         //Iniciando o observador e atribuindo o elemento que será observado.

@@ -1,0 +1,174 @@
+/*Inner container*/
+.inner-container {
+    @apply max-w-[1158px] h-full flex m-auto justify-between items-center;
+}
+
+/*Início - Botão do menu mobile*/
+.hamburger-btn {
+    @apply ml-auto block py-2 px-3;
+    @apply mdd:hidden;
+}
+
+.hamburger-btn__icons-wrapper {
+    @apply flex flex-col gap-1 items-center;
+}
+
+.hamburger-btn__icon {
+    @apply shrink-0 w-6 h-[2px] rounded-full bg-neutral-600 transition-all
+    duration-200;
+}
+
+.open > span:first-child {
+    @apply rotate-45 translate-y-[6px];
+}
+
+.open > span:nth-child(2) {
+    @apply w-0;
+}
+
+.open > span:last-child {
+    @apply -rotate-45 -translate-y-[6px];
+}
+/*Fim - Botão do menu mobile*/
+
+/*Início - Navbar*/
+.navbar {
+    @apply invisible bg-gradient-to-b from-[var(--overlay-dark-blue)] to-white/10
+    w-screen h-screen -translate-x-2/4 left-1/2 absolute top-full p-6 opacity-0
+    transition-[opacity,visibility] duration-[400ms];
+    @apply mdd:-translate-x-0 mdd:static mdd:h-full mdd:w-auto mdd:p-0
+    mdd:from-transparent mdd:to-transparent mdd:opacity-100 mdd:visible;
+}
+
+.navbar--show {
+    @apply visible opacity-100;
+}
+
+.navbar__link-list {
+    @apply flex items-center gap-4 flex-col mdd:w-full bg-white rounded-lg
+    px-5 py-7 min-w-fit transition duration-[400ms] -translate-y-2/4 opacity-0;
+    @apply mdd:flex-row mdd:h-full mdd:w-auto mdd:bg-transparent mdd:p-0
+    mdd:gap-6 mdd:-translate-y-0 mdd:opacity-100;
+}
+
+.navbar__link-list--show {
+    @apply -translate-y-0 opacity-100;
+}
+
+.navbar__link-item {
+    @apply relative h-full flex items-center visible;
+    @apply mdd:invisible;
+}
+
+.navbar__link-item--visible {
+    @apply visible;
+}
+
+.navbar__link {
+    @apply text-[var(--dark-blue)] hover:text-[var(--dark-blue)] font-normal
+    transition-all duration-[250ms] hover:after:opacity-100 text-lg
+    focus-visible:after:opacity-100 focus-visible:text-[var(--dark-blue)];
+    @apply mdd:text-[var(--grayish-blue)] mdd:font-light mdd:text-base;
+    @apply after:transition-all after:duration-[250ms] after:w-full after:opacity-0
+    after:content-[''] after:absolute after:left-0 after:top-full after:h-1
+    after:-translate-y-full after:bg-gradient-to-r after:from-[var(--lime-green)]
+    after:to-[var(--gright-cyan)] after:rounded-sm;
+}
+
+.navbar__link--hidden {
+    @apply invisible;
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar__link--hidden {
+        visibility: inherit;
+    }
+}
+/*Fim - Navbar*/
+
+/*Início - Service*/
+.service {
+    @apply invisible;
+}
+
+.service__icon {
+    @apply w-fit m-[0_auto_1.5rem] rounded-full shadow-lg;
+    @apply mdd:m-[0_0_2.25rem];
+}
+
+.service__title {
+    @apply text-[var(--dark-blue)] text-xl mb-4 mdd:mb-7;
+    @apply mdd:text-2xl;
+}
+
+.service__description {
+    @apply text-[var(--grayish-blue)] mdd:text-base;
+}
+/*Fim - Service*/
+
+/*Início - Article*/
+.article {
+    @apply bg-white overflow-hidden rounded-md text-[var(--grayish-blue)]
+    shadow-md invisible transition-all duration-[250ms];
+}
+
+.article:hover {
+    transform: translateY(-0.75rem);
+}
+
+.article__img-container {
+    @apply h-[12.5rem];
+}
+
+.article__content-wrapper {
+    @apply px-6 py-7;
+}
+
+.article__author {
+    @apply text-[0.65rem] mdd:text-xs mb-2;
+}
+
+.article__link {
+    @apply block hover:text-[var(--lime-green)] transition-all duration-[250ms]
+    text-[var(--dark-blue)] leading-[1.25] mb-2 focus-visible:text-[var(--lime-green)];
+}
+
+.article__description {
+    @apply text-[0.8rem];
+}
+
+@media only screen and (max-width: 900px) {
+    .article:hover {
+        transform: scale(1.05);
+    }
+}
+/*Fim - Article*/
+
+/*Início - Button call to action*/
+.btn {
+    @apply px-3 py-2 bg-stone-50 text-slate-600 ring-1 ring-slate-600
+    w-fit;
+}
+
+.btn--cta {
+    @apply px-7 py-[0.6rem] bg-gradient-to-r from-[var(--lime-green)]
+    via-[var(--gright-cyan)] to-[var(--lime-green)] ring-2 rounded-full
+    ring-transparent hover:ring-slate-200  text-white shadow-md
+    transition-[box-shadow] whitespace-nowrap
+    hover:animate-[gradient-transition_0.75s_infinite_linear]
+    focus-visible:animate-[gradient-transition_0.75s_infinite_linear]
+    focus-within:ring-2 focus-visible:ring-slate-200;
+    background-size: 170%;
+}
+/*Fim - Button call to action*/
+
+/*Botão de retorno ao topo*/
+.scrollup {
+    @apply w-fit h-fit fixed right-6 bottom-6 rounded-full transition-all
+    duration-[400ms];
+}
+
+.scrollup__button {
+    @apply p-2 rounded-full bg-[var(--grayish-dark-blue)] shadow-md duration-[250ms]
+    shadow-[#2d314d7a] hover:bg-[var(--dark-blue)] transition-[background-color];
+}

@@ -1,0 +1,22 @@
+/*Header*/
+.header {
+    @apply w-full fixed z-10 h-16 m-auto bg-white px-6;
+    @apply mdd:px-8 mdd:relative mdd:h-20;
+}
+
+.header__inner {
+    @apply gap-4 visible;
+    @apply mdd:invisible;
+}
+
+.header__brand {
+    @apply w-max shrink-0;
+}
+
+.header__btn-wrapper {
+    @apply flex-shrink-0 hidden mdd:block;
+}
+
+.header__inner--visible {
+    @apply visible;
+}

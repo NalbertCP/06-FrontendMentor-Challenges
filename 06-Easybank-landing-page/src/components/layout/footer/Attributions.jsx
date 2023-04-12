@@ -5,7 +5,7 @@ export default function Attributions() {
     return (
         <div className="block text-[var(--grayish-blue)] text-sm">
             <a
-                className="hover:text-[var(--lime-green)] transition duration-100"
+                className="hover:text-[var(--lime-green)] transition duration-[250ms]"
                 href="https://www.frontendmentor.io/"
                 target="_blank"
                 rel="noreferrer"
@@ -16,7 +16,7 @@ export default function Attributions() {
                 <a href="https://github.com/nalbertcerqueira"></a>
                 Coded by{" "}
                 <a
-                    className="hover:text-[var(--lime-green)] transition duration-100"
+                    className="hover:text-[var(--lime-green)] transition duration-[250ms]"
                     target="_blank"
                     href="https://github.com/nalbertcerqueira"
                     rel="noreferrer"

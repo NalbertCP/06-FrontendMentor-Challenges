@@ -88,6 +88,10 @@
     @apply mdd:px-8 mdd:py-24;
 }
 
+.articles__inner-container {
+    @apply block;
+}
+
 .articles__title {
     @apply text-[2rem] text-[var(--dark-blue)] mb-6 text-center invisible;
     @apply mdd:mb-12 mdd:text-left mdd:text-[2.50rem];

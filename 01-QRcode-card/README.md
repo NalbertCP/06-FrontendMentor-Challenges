@@ -13,7 +13,7 @@ Um simples card QR Code criado apenas com HTML e CSS, a partir do design forneci
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193434192-b54cde5a-cd73-4970-b97c-40a98ff8b20a.png">
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 - HTML
 - CSS

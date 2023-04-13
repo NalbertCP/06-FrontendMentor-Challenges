@@ -23,7 +23,7 @@ O projeto consiste em criar um componente para exibir um resumo das despesas sem
 
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/197365889-73f1a956-7306-4108-89e9-577f7cc24ee6.png">
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 -   HTML
 -   CSS

@@ -20,7 +20,7 @@ Uma página de notificações minimalista criada com HTML, CSS e Java Script. O 
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193695631-206cccfe-66d5-4ec3-8edc-c54254549b75.png">
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 -   HTML
 -   CSS

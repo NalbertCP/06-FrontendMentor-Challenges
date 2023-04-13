@@ -16,7 +16,7 @@ Projeto desenvolvido em um dos desafios disponíveis na página Frontend Mentor,
 
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/196008063-cffb363e-47b5-47e9-b551-98abe17f058c.png">
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 -   HTML
 -   CSS

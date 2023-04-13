@@ -13,7 +13,7 @@ Um belo e minimalista card NFT criado apenas com HTML e CSS, com design fornecid
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193474316-3f03edc8-42b2-4200-90c5-f6e5b6c71769.png">
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 - HTML
 - CSS

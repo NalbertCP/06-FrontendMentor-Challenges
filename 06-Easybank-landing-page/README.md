@@ -23,7 +23,7 @@ Landing page desenvolvida a partir de um dos desafios disponíveis na página da
 3. Inicie a aplicação com npm run dev;
 4. Navegue até http://localhost:3000/ para visualizar o projeto.
 
-## 💻 Stacks utilizadas
+## 💻 Stack utilizada
 
 -   HTML
 -   CSS

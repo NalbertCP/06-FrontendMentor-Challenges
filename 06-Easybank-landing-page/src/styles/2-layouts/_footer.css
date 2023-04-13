@@ -36,7 +36,9 @@
 
 .footer__link {
     @apply block text-white hover:text-[var(--lime-green)] transition
-    duration-[250ms] whitespace-nowrap focus-visible:text-[var(--lime-green)];
+    duration-[250ms] whitespace-nowrap focus-visible:text-[var(--lime-green)]
+    w-fit m-auto;
+    @apply mdd:m-0;
 }
 
 .footer__credits-wrapper {

@@ -12,7 +12,7 @@ export default function Navbar() {
             <button onClick={changeMenuState} className="hamburger-btn" type="button">
                 <MenuIcon className={menuOpen ? "open" : ""} />
             </button>
-            <nav className={`navbar  ${menuOpen ? "navbar--show" : ""}`}>
+            <nav className={`navbar ${menuOpen ? "navbar--show" : ""}`}>
                 <ul
                     className={`navbar__link-list ${
                         menuOpen ? "navbar__link-list--show" : ""

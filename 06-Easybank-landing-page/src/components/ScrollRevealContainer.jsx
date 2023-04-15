@@ -5,6 +5,12 @@ import ScrollReveal from "scrollreveal"
 //Componente responsável por atribuir efeitos de transição
 //durante eventos de scroll, para alguns elementos da página
 export default function ScrollRevealContainer({ children }) {
+    //Atribuindo os eventos após a montagem do componente
+    useEffect(() => {
+        ;[headerReveal(), navbarReveal(), footerReveal()]
+        ;[(phonesReveal(), introReveal(), servicesReveal(), articlesReveal())]
+    }, [])
+
     function headerReveal() {
         const innerContainer = document.querySelector(".header__inner")
         if (window.innerWidth > 900) {
@@ -77,12 +83,6 @@ export default function ScrollRevealContainer({ children }) {
             interval: 200
         })
     }
-
-    //Atribuindo os eventos após a montagem do componente
-    useEffect(() => {
-        ;[headerReveal(), navbarReveal(), footerReveal()]
-        ;[(phonesReveal(), introReveal(), servicesReveal(), articlesReveal())]
-    }, [])
 
     return children
 }

@@ -25,5 +25,5 @@ export default function useScroll() {
         if (!isIntersecting && positiveClientRectTop) setIsVisible(false)
     }
 
-    return { isVisible }
+    return isVisible
 }

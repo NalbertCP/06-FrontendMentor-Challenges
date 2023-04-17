@@ -14,7 +14,7 @@ import useScroll from "./hooks/useScroll"
 export default function App() {
     //useScroll detecta a porcentagem da página que ja foi "scrollada"
     //para esconder ou exibir o botão de retorno ao topo (ScrollUpButton).
-    const { isVisible } = useScroll()
+    const isVisible = useScroll()
 
     return (
         <ScrollRevealContainer>

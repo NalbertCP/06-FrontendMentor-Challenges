@@ -8,7 +8,7 @@ export default function ScrollRevealContainer({ children }) {
     //Atribuindo os eventos após a montagem do componente
     useEffect(() => {
         ;[headerReveal(), navbarReveal(), footerReveal()]
-        ;[(phonesReveal(), introReveal(), servicesReveal(), articlesReveal())]
+        ;[phonesReveal(), introReveal(), servicesReveal(), articlesReveal()]
     }, [])
 
     function headerReveal() {

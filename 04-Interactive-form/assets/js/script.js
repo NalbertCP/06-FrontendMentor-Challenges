@@ -1,7 +1,7 @@
 /*Selecionando elementos do DOM*/
 const ownerInput = document.querySelector("#owner-name")
 const numberInput = document.querySelector("#card-number")
-const mounthInput = document.querySelector("#exp-mounth")
+const monthInput = document.querySelector("#exp-month")
 const yearInput = document.querySelector("#exp-year")
 const cvcInput = document.querySelector("#cvc-code")
 const mainForm = document.querySelector(".before-send")
@@ -14,8 +14,8 @@ const formEventHandler = formHandler()
 /*Atribuindo event listeners aos elementos*/
 ownerInput.addEventListener("input", cardsEvents.changeOwnerName)
 numberInput.addEventListener("input", cardsEvents.changeCardNumber)
-mounthInput.addEventListener("input", cardsEvents.changeExpMouth)
-yearInput.addEventListener("input", cardsEvents.changeExpMouth)
+monthInput.addEventListener("input", cardsEvents.changeExpMonth)
+yearInput.addEventListener("input", cardsEvents.changeExpMonth)
 cvcInput.addEventListener("input", cardsEvents.changeCvcCode)
 mainForm.addEventListener("submit", (event) => {
     formEventHandler.main(event)
@@ -25,7 +25,7 @@ formSent.addEventListener("submit", (event) => {
     formEventHandler.isFlagTrue() ? mainForm.submit() : null
 })
 
-/*Função: manipulando enventos do formulário*/
+/*Função: manipulando eventos do formulário*/
 function formHandler() {
     let flag = false
     //Removendo todos os erros do formulário (reset do formulário)
@@ -56,10 +56,10 @@ function formHandler() {
                 flag = false
             }
         }
-        if (yearInput.value === "" || mounthInput.value === "") {
+        if (yearInput.value === "" || monthInput.value === "") {
             expDate.appendChild(createError("can't be blank."))
             yearInput.value === "" ? yearInput.classList.add("invalid-input") : null
-            mounthInput.value === "" ? mounthInput.classList.add("invalid-input") : null
+            monthInput.value === "" ? monthInput.classList.add("invalid-input") : null
             flag = false
         }
     }
@@ -120,13 +120,13 @@ function cardEventsHandler() {
             numberInput.value = numberInput.value.replace(/([0-9]{4})/g, "$1 ").trimEnd()
             cardNumber.innerHTML = numberInput.value
         },
-        changeExpMouth() {
-            mounthInput.value = mounthInput.value.replace(/\D+/g, "").slice(0, 2)
-            if (Number(mounthInput.value) > 12) mounthInput.value = 12
+        changeExpMonth() {
+            monthInput.value = monthInput.value.replace(/\D+/g, "").slice(0, 2)
+            if (Number(monthInput.value) > 12) monthInput.value = 12
             yearInput.value = yearInput.value.replace(/\D+/g, "").slice(0, 2)
-            const mounth = `0${mounthInput.value}`.slice(-2)
+            const month = `0${monthInput.value}`.slice(-2)
             const year = `0${yearInput.value}`.slice(-2)
-            expiringDate.innerHTML = `${mounth}/${year}`
+            expiringDate.innerHTML = `${month}/${year}`
         },
         changeCvcCode() {
             cvcInput.value = cvcInput.value.slice(0, 3).replace(/\D+/g, "")

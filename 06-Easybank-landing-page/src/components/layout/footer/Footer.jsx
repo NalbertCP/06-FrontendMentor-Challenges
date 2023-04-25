@@ -10,6 +10,14 @@ import YouTubeIcon from "../../icons/YoutubeIcon"
 import Attributions from "./Attributions"
 
 export default function Footer() {
+    const footerLinks = [
+        "About us",
+        "Contact",
+        "Blog",
+        "Careers",
+        "Support",
+        "Privacy Policy"
+    ]
     return (
         <footer className="footer">
             <div className="inner-container footer__inner-container">
@@ -18,7 +26,7 @@ export default function Footer() {
                         <EasyBankLogo fillColor="#ffffff" />
                     </div>
                     <div className="footer__social-links">
-                        <a className="group/social" href="#">
+                        <a href="#" className="group/social">
                             <FacebookIcon className="footer__social-icon" />
                         </a>
                         <a href="#" className="group/social">
@@ -36,36 +44,13 @@ export default function Footer() {
                     </div>
                 </div>
                 <ul className="footer__link-list">
-                    <li>
-                        <a className="footer__link" href="#">
-                            About us
-                        </a>
-                    </li>
-                    <li>
-                        <a className="footer__link" href="#">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a className="footer__link" href="#">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a className="footer__link" href="#">
-                            Careers
-                        </a>
-                    </li>
-                    <li>
-                        <a className="footer__link" href="#">
-                            Support
-                        </a>
-                    </li>
-                    <li>
-                        <a className="footer__link" href="#">
-                            Privacy Policy
-                        </a>
-                    </li>
+                    {footerLinks.map((linkName) => (
+                        <li key={linkName}>
+                            <a className="footer__link" href="#">
+                                {linkName}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
                 <div className="footer__credits-wrapper">
                     <FancyButton className="btn btn--cta footer__btn--cta" />

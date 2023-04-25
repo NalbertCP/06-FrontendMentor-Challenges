@@ -6,6 +6,7 @@ import NavLink from "./NavLink"
 
 export default function Navbar() {
     const { menuOpen, changeMenuState } = useMenu()
+    const linkList = ["Home", "About", "Contact", "Blog", "Careers"]
 
     return (
         <>
@@ -18,36 +19,14 @@ export default function Navbar() {
                         menuOpen ? "navbar__link-list--show" : ""
                     }`}
                 >
-                    <li className="navbar__link-item">
-                        <NavLink
-                            className={menuOpen ? "" : "navbar__link--hidden"}
-                            content="Home"
-                        />
-                    </li>
-                    <li className="navbar__link-item">
-                        <NavLink
-                            className={menuOpen ? "" : "navbar__link--hidden"}
-                            content="About"
-                        />
-                    </li>
-                    <li className="navbar__link-item">
-                        <NavLink
-                            className={menuOpen ? "" : "navbar__link--hidden"}
-                            content="Contact"
-                        />
-                    </li>
-                    <li className="navbar__link-item">
-                        <NavLink
-                            className={menuOpen ? "" : "navbar__link--hidden"}
-                            content="Blog"
-                        />
-                    </li>
-                    <li className="navbar__link-item">
-                        <NavLink
-                            className={menuOpen ? "" : "navbar__link--hidden"}
-                            content="Careers"
-                        />
-                    </li>
+                    {linkList.map((linkName) => (
+                        <li key={linkName} className="navbar__link-item">
+                            <NavLink
+                                className={menuOpen ? "" : "navbar__link--hidden"}
+                                content={linkName}
+                            />
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </>

@@ -1,4 +1,4 @@
-# 🔔 Notification component
+# 🔔 Componente de notificações
 
 ![HTML badge](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -15,7 +15,7 @@ Uma página de notificações minimalista criada com HTML, CSS e Java Script. O 
 **O design do projeto original fornecido pela [Frontend Mentor](https://www.frontendmentor.io/) segue no link abaixo:**
 
 ```r
-[Notification component challenge] 🔗 https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC
+[Link do desafio] 🔗 https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC
 ```
 
 <img width="800px" src="https://user-images.githubusercontent.com/105606295/193695631-206cccfe-66d5-4ec3-8edc-c54254549b75.png">

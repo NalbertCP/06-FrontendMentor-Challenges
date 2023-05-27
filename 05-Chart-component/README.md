@@ -1,4 +1,4 @@
-# 💰 Expenses chart component
+# 💰 Gráfico dinâmico de despesas
 
 ![HTML badge](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -18,7 +18,7 @@ O projeto consiste em criar um componente para exibir um resumo das despesas sem
 **O design do projeto original fornecido pela [Frontend Mentor](https://www.frontendmentor.io/) segue no link abaixo:**
 
 ```r
-[Expanses chart component | challenge] 🔗 https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
+[Link do desafio] 🔗 https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
 ```
 
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/197365889-73f1a956-7306-4108-89e9-577f7cc24ee6.png">

@@ -1,4 +1,4 @@
-# 💳 Interactive card form
+# 💳 Formulário interativo
 
 ![HTML badge](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -11,7 +11,7 @@ Projeto desenvolvido em um dos desafios disponíveis na página Frontend Mentor,
 **O design do projeto original fornecido pela [Frontend Mentor](https://www.frontendmentor.io/) segue no link abaixo:**
 
 ```r
-[Interative card form | challenge] 🔗 https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
+[Link do desafio] 🔗 https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
 ```
 
 <img width="850px" src="https://user-images.githubusercontent.com/105606295/196008063-cffb363e-47b5-47e9-b551-98abe17f058c.png">

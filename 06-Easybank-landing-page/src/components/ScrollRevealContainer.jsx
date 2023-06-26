@@ -14,7 +14,10 @@ export default function ScrollRevealContainer({ children }) {
     function headerReveal() {
         const innerContainer = document.querySelector(".header__inner")
         if (window.innerWidth > 900) {
-            ScrollReveal().reveal(innerContainer, { duration: 1000 })
+            ScrollReveal().reveal(innerContainer, {
+                duration: 1000,
+                easing: "ease-in-out"
+            })
         } else {
             innerContainer.classList.add("header__inner--visible")
         }
@@ -26,7 +29,9 @@ export default function ScrollRevealContainer({ children }) {
                 delay: 400,
                 interval: 200,
                 distance: "-25%",
-                origin: "bottom"
+                origin: "bottom",
+                duration: 500,
+                easing: "ease-in-out"
             })
         } else {
             Array.from(navItems).map((navItem) =>
@@ -40,18 +45,20 @@ export default function ScrollRevealContainer({ children }) {
         const credits = document.querySelector(".footer__credits-wrapper")
         ScrollReveal().reveal([socialWrapper, linksFooter, credits], {
             interval: 200,
-            distance: "-25%",
-            origin: "top"
+            distance: "-50%",
+            origin: "top",
+            duration: 750,
+            easing: "ease-in-out"
         })
     }
 
     function phonesReveal() {
         const phoneMockups = document.querySelector(".intro__mockups-wrapper")
-        if (window.innerWidth > 900) {
-            ScrollReveal().reveal(phoneMockups, { delay: 1600 })
-        } else {
-            phoneMockups.classList.add("intro__mockups-wrapper--visible")
-        }
+        ScrollReveal().reveal(phoneMockups, {
+            delay: window.innerWidth > 900 ? 2500 : 0,
+            duration: 500,
+            easing: "ease-in-out"
+        })
     }
     function introReveal() {
         const title = document.querySelector(".intro__title")
@@ -60,27 +67,38 @@ export default function ScrollRevealContainer({ children }) {
 
         ScrollReveal().reveal([title, paragraph, fancyButton], {
             interval: 200,
-            delay: window.innerWidth > 900 ? 1400 : 400,
-            distance: "-25%",
-            origin: "top"
+            delay: window.innerWidth > 900 ? 1700 : 500,
+            distance: "-50%",
+            origin: "top",
+            duration: 500,
+            easing: "ease-in-out"
         })
     }
     function servicesReveal() {
         const title = document.querySelector(".services__title")
         const paragraph = document.querySelector(".services__description")
-        const defaultReveal = { interval: 200, distance: "-25%", origin: "top" }
+        const defaultRevelConfigs = {
+            interval: 200,
+            distance: "-50%",
+            origin: "top",
+            duration: 750,
+            easing: "ease-in-out"
+        }
 
-        ScrollReveal().reveal([title, paragraph], defaultReveal)
-        ScrollReveal().reveal(".service", { delay: 400, ...defaultReveal })
+        ScrollReveal().reveal([title, paragraph], defaultRevelConfigs)
+        ScrollReveal().reveal(".service", defaultRevelConfigs)
     }
     function articlesReveal() {
+        const defaultRevelConfigs = { duration: 750, easing: "ease-in-out" }
         ScrollReveal().reveal(".articles__title", {
-            distance: "-25%",
-            origin: "top"
+            distance: "-50%",
+            origin: "top",
+            ...defaultRevelConfigs
         })
         ScrollReveal().reveal(".article", {
             delay: 200,
-            interval: 200
+            interval: 200,
+            ...defaultRevelConfigs
         })
     }
 

@@ -18,14 +18,16 @@ export default function App() {
 
     return (
         <ScrollRevealContainer>
-            <Header />
-            <main>
-                <IntroSection />
-                <ServicesSection />
-                <ArticlesSection />
+            <div className="app-container">
+                <Header />
+                <main>
+                    <IntroSection />
+                    <ServicesSection />
+                    <ArticlesSection />
+                </main>
                 <Footer />
                 <ScrollUpButton isVisible={isVisible} />
-            </main>
+            </div>
         </ScrollRevealContainer>
     )
 }

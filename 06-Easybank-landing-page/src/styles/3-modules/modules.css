@@ -1,3 +1,8 @@
+.app-container {
+    grid-template-rows: min-content min-content auto;
+    @apply m-auto min-h-screen grid;
+}
+
 /*Inner container*/
 .inner-container {
     @apply max-w-[1158px] h-full flex m-auto justify-between items-center;

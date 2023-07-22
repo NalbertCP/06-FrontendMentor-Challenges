@@ -41,8 +41,3 @@ body::-webkit-scrollbar-thumb {
 #root {
     @apply mdd:overflow-hidden;
 }
-
-main {
-    grid-template-rows: min-content min-content min-content auto;
-    @apply m-auto min-h-screen grid;
-}

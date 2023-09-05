@@ -1,5 +1,5 @@
 {
-  "name": "04-interactive-form",
+  "name": "interactive-form",
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^8.28.0",

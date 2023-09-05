@@ -1,5 +1,5 @@
 {
-  "name": "03-notification-component",
+  "name": "notification-component",
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^8.28.0",

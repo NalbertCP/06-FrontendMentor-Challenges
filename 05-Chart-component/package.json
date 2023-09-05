@@ -1,5 +1,5 @@
 {
-  "name": "05-chart-component",
+  "name": "chart-component",
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^8.28.0",

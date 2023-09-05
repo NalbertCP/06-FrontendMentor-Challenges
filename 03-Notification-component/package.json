@@ -1,12 +1,6 @@
 {
   "name": "03-notification-component",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",

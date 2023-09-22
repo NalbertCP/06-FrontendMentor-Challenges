@@ -22,6 +22,6 @@ Projeto desenvolvido em um dos desafios disponíveis na página Frontend Mentor,
 -   CSS
 -   JavaScript
 
-## 💵 Licença
+## 📝 Licença
 
-**O uso de todos os arquivos deste projeto é limitado apenas para fins de estudos.**
+MIT License © [MIT License ](./LICENSE)

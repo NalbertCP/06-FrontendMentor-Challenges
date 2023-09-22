@@ -26,6 +26,6 @@ Uma página de notificações minimalista criada com HTML, CSS e Java Script. O 
 -   CSS
 -   JavaScript
 
-## 💵 Licença
+## 📝 Licença
 
-**O uso de todos os arquivos deste projeto é limitado apenas para fins de estudos.**
+MIT License © [MIT License ](./LICENSE)

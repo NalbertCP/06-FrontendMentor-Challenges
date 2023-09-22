@@ -29,6 +29,6 @@ O projeto consiste em criar um componente para exibir um resumo das despesas sem
 -   CSS
 -   JavaScript
 
-## 💵 Licença
+## 📝 Licença
 
-**O uso de todos os arquivos deste projeto é limitado apenas para fins de estudos.**
+MIT License © [MIT License ](./LICENSE)

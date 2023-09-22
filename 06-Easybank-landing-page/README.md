@@ -1,4 +1,4 @@
-# ✈️ Landing page - Easybank 
+# ✈️ Landing page - Easybank
 
 ![HTML badge](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -31,6 +31,6 @@ Landing page desenvolvida a partir de um dos desafios disponíveis na página da
 -   ReactJS
 -   TailwindCSS
 
-## 💵 Licença
+## 📝 Licença
 
-**O uso de todos os arquivos deste projeto é limitado apenas para fins de estudos.**
+MIT License © [MIT License ](./LICENSE)

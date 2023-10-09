@@ -19,6 +19,8 @@ export default function IntroSection() {
                     </div>
                     <div className="intro__mockups-wrapper">
                         <img
+                            width={767}
+                            height={939}
                             className="w-full h-full m-auto max-w-[500px] mdd:max-w-none"
                             src={phoneMockups}
                             alt="easybank mobile mockup"

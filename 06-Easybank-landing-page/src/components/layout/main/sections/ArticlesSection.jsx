@@ -14,6 +14,9 @@ export default function ArticlesSection() {
                 <div className="articles__articles-wrapper">
                     <Article
                         img={currency}
+                        imgWidth={553}
+                        imgHeight={400}
+                        width
                         imgAlt="some euro paper currency"
                         author="Claire Robinson"
                         title="Receive money in any currency with no fees"
@@ -23,6 +26,8 @@ export default function ArticlesSection() {
                     />
                     <Article
                         img={restaurant}
+                        imgWidth={600}
+                        imgHeight={400}
                         imgAlt="a restaurant with some menu dishes"
                         author="Wilson Hutton"
                         title="Treat yourself without worrying about money"
@@ -32,6 +37,8 @@ export default function ArticlesSection() {
                     />
                     <Article
                         img={airplane}
+                        imgWidth={602}
+                        imgHeight={400}
                         imgAlt="an airplane flying with focus to its right wing"
                         author="Wilson Hutton"
                         title="Take your Easybank card wherever you go"
@@ -41,6 +48,8 @@ export default function ArticlesSection() {
                     />
                     <Article
                         img={confetti}
+                        imgWidth={600}
+                        imgHeight={400}
                         imgAlt="colorful confetti"
                         author="Claire Robinson"
                         title="Our invite-only Beta accounts are now live!"

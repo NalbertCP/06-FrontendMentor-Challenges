@@ -56,7 +56,7 @@ export default function ScrollRevealContainer({ children }) {
         const phoneMockups = document.querySelector(".intro__mockups-wrapper")
         ScrollReveal().reveal(phoneMockups, {
             delay: window.innerWidth > 900 ? 2500 : 0,
-            duration: 500,
+            duration: 750,
             easing: "ease-in-out"
         })
     }
